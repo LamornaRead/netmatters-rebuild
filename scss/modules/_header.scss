@@ -1,0 +1,60 @@
+// main
+
+header {
+    height: 100px;
+    padding: 20px 0;
+}
+
+.net-logo {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    width: 150px;
+    @include mq(small) {
+        padding-top: 10px;
+        padding-bottom: 10px;
+        width: 250px;
+    }
+    @include mq(medium) {
+        padding-top: 5px;
+        padding-bottom: 5px;
+        width: 300px;
+    }
+    @include mq(large) {
+        padding-top: 0;
+        padding-bottom: 0;
+        width: 330px;
+    }
+    @include mq(x-large) {
+        width: 360px;
+    }
+}
+//design 
+
+.search-form {
+    display: flex;
+}
+.search-input {
+    height: 55px;
+    width: 200px;
+    font-size: 1rem;
+    border: none;
+    padding: 5px;
+    border: 1px solid $light-grey;
+}
+
+
+//layout
+
+.main-logo {
+    float: left;
+    position: relative;
+}
+.info-bar {
+    float: right;
+    position: relative;
+}
+
+.flo {
+    float: left;
+    margin-left: 10px;
+}

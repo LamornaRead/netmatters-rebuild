@@ -1,0 +1,19 @@
+// Base styles
+
+* {
+    box-sizing: border-box;
+ }
+
+ body {
+    font-family: $font-primary;
+    font-weight: $font-weight--light; 
+    font-size: 14px;
+    letter-spacing: .7px;
+    line-height: 1.4rem;
+    color: $dark-grey;
+ }
+
+ ul { 
+   list-style: none;
+}
+ 
