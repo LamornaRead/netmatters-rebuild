@@ -1,43 +1,51 @@
+/* line 2, ../../../OneDrive/Desktop/netmatters-rebuild/scss/utilities/_helper.scss */
 .clear::after {
   content: "";
   display: table;
   clear: both;
 }
 
-.news-articles, .icon-service, .icon-background, .banner-content {
+/* line 19, ../../../OneDrive/Desktop/netmatters-rebuild/scss/utilities/_helper.scss */
+.banner-content, .icon-background, .icon-service, .news-articles {
   margin-left: auto;
   margin-right: auto;
 }
 
-.info-container, .social-icons, .footer-social, .footer, .nav-menu-list {
+/* line 26, ../../../OneDrive/Desktop/netmatters-rebuild/scss/utilities/_helper.scss */
+.nav-menu-list, .footer, .footer-social, .social-icons, .info-container {
   display: flex;
   flex-wrap: wrap;
 }
 
 @media (min-width: 1px) and (max-width: 768px) {
+  /* line 1, ../../../OneDrive/Desktop/netmatters-rebuild/scss/utilities/_hidden.scss */
   .small-hidden {
     display: none;
   }
 }
 
 @media (min-width: 768px) and (max-width: 925px) {
+  /* line 6, ../../../OneDrive/Desktop/netmatters-rebuild/scss/utilities/_hidden.scss */
   .medium-hidden {
     display: none;
   }
 }
 
 @media (min-width: 925px) and (max-width: 1243px) {
+  /* line 11, ../../../OneDrive/Desktop/netmatters-rebuild/scss/utilities/_hidden.scss */
   .large-hidden {
     display: none;
   }
 }
 
 @media (min-width: 1243px) {
+  /* line 16, ../../../OneDrive/Desktop/netmatters-rebuild/scss/utilities/_hidden.scss */
   .x-large-hidden {
     display: none;
   }
 }
 
+/* line 21, ../../../OneDrive/Desktop/netmatters-rebuild/scss/utilities/_hidden.scss */
 .hidden {
   display: none;
 }
@@ -49,107 +57,130 @@
  * 1. Correct the line height in all browsers.
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
+/* line 11, ../../../OneDrive/Desktop/netmatters-rebuild/scss/base/_normalize.scss */
 html {
-  line-height: 1.15; /* 1 */
-  -webkit-text-size-adjust: 100%; /* 2 */
+  line-height: 1.15;
+  /* 1 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
 }
 
 /* Sections
-   ========================================================================== */
+     ========================================================================== */
 /**
- * Remove the margin in all browsers.
- */
+   * Remove the margin in all browsers.
+   */
+/* line 23, ../../../OneDrive/Desktop/netmatters-rebuild/scss/base/_normalize.scss */
 body {
   margin: 0;
 }
 
 /**
- * Render the `main` element consistently in IE.
- */
+   * Render the `main` element consistently in IE.
+   */
+/* line 31, ../../../OneDrive/Desktop/netmatters-rebuild/scss/base/_normalize.scss */
 main {
   display: block;
 }
 
 /**
- * Correct the font size and margin on `h1` elements within `section` and
- * `article` contexts in Chrome, Firefox, and Safari.
- */
+   * Correct the font size and margin on `h1` elements within `section` and
+   * `article` contexts in Chrome, Firefox, and Safari.
+   */
+/* line 40, ../../../OneDrive/Desktop/netmatters-rebuild/scss/base/_normalize.scss */
 h1 {
   font-size: 2em;
   margin: 0.67em 0;
 }
 
 /* Grouping content
-   ========================================================================== */
+     ========================================================================== */
 /**
- * 1. Add the correct box sizing in Firefox.
- * 2. Show the overflow in Edge and IE.
- */
+   * 1. Add the correct box sizing in Firefox.
+   * 2. Show the overflow in Edge and IE.
+   */
+/* line 53, ../../../OneDrive/Desktop/netmatters-rebuild/scss/base/_normalize.scss */
 hr {
-  box-sizing: content-box; /* 1 */
-  height: 0; /* 1 */
-  overflow: visible; /* 2 */
+  box-sizing: content-box;
+  /* 1 */
+  height: 0;
+  /* 1 */
+  overflow: visible;
+  /* 2 */
 }
 
 /**
- * 1. Correct the inheritance and scaling of font size in all browsers.
- * 2. Correct the odd `em` font sizing in all browsers.
- */
+   * 1. Correct the inheritance and scaling of font size in all browsers.
+   * 2. Correct the odd `em` font sizing in all browsers.
+   */
+/* line 64, ../../../OneDrive/Desktop/netmatters-rebuild/scss/base/_normalize.scss */
 pre {
-  font-family: monospace, monospace; /* 1 */
-  font-size: 1em; /* 2 */
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */
 }
 
 /* Text-level semantics
-   ========================================================================== */
+     ========================================================================== */
 /**
- * Remove the gray background on active links in IE 10.
- */
+   * Remove the gray background on active links in IE 10.
+   */
+/* line 76, ../../../OneDrive/Desktop/netmatters-rebuild/scss/base/_normalize.scss */
 a {
   background-color: transparent;
 }
 
 /**
- * 1. Remove the bottom border in Chrome 57-
- * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
- */
+   * 1. Remove the bottom border in Chrome 57-
+   * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+   */
+/* line 85, ../../../OneDrive/Desktop/netmatters-rebuild/scss/base/_normalize.scss */
 abbr[title] {
-  border-bottom: none; /* 1 */
-  text-decoration: underline; /* 2 */
-  -webkit-text-decoration: underline dotted;
-          text-decoration: underline dotted; /* 2 */
+  border-bottom: none;
+  /* 1 */
+  text-decoration: underline;
+  /* 2 */
+  text-decoration: underline dotted;
+  /* 2 */
 }
 
 /**
- * Add the correct font weight in Chrome, Edge, and Safari.
- */
+   * Add the correct font weight in Chrome, Edge, and Safari.
+   */
+/* line 95, ../../../OneDrive/Desktop/netmatters-rebuild/scss/base/_normalize.scss */
 b,
 strong {
   font-weight: bolder;
 }
 
 /**
- * 1. Correct the inheritance and scaling of font size in all browsers.
- * 2. Correct the odd `em` font sizing in all browsers.
- */
+   * 1. Correct the inheritance and scaling of font size in all browsers.
+   * 2. Correct the odd `em` font sizing in all browsers.
+   */
+/* line 105, ../../../OneDrive/Desktop/netmatters-rebuild/scss/base/_normalize.scss */
 code,
 kbd,
 samp {
-  font-family: monospace, monospace; /* 1 */
-  font-size: 1em; /* 2 */
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */
 }
 
 /**
- * Add the correct font size in all browsers.
- */
+   * Add the correct font size in all browsers.
+   */
+/* line 116, ../../../OneDrive/Desktop/netmatters-rebuild/scss/base/_normalize.scss */
 small {
   font-size: 80%;
 }
 
 /**
- * Prevent `sub` and `sup` elements from affecting the line height in
- * all browsers.
- */
+   * Prevent `sub` and `sup` elements from affecting the line height in
+   * all browsers.
+   */
+/* line 125, ../../../OneDrive/Desktop/netmatters-rebuild/scss/base/_normalize.scss */
 sub,
 sup {
   font-size: 75%;
@@ -158,217 +189,266 @@ sup {
   vertical-align: baseline;
 }
 
+/* line 133, ../../../OneDrive/Desktop/netmatters-rebuild/scss/base/_normalize.scss */
 sub {
   bottom: -0.25em;
 }
 
+/* line 137, ../../../OneDrive/Desktop/netmatters-rebuild/scss/base/_normalize.scss */
 sup {
   top: -0.5em;
 }
 
 /* Embedded content
-   ========================================================================== */
+     ========================================================================== */
 /**
- * Remove the border on images inside links in IE 10.
- */
+   * Remove the border on images inside links in IE 10.
+   */
+/* line 148, ../../../OneDrive/Desktop/netmatters-rebuild/scss/base/_normalize.scss */
 img {
   border-style: none;
 }
 
 /* Forms
-   ========================================================================== */
+     ========================================================================== */
 /**
- * 1. Change the font styles in all browsers.
- * 2. Remove the margin in Firefox and Safari.
- */
+   * 1. Change the font styles in all browsers.
+   * 2. Remove the margin in Firefox and Safari.
+   */
+/* line 160, ../../../OneDrive/Desktop/netmatters-rebuild/scss/base/_normalize.scss */
 button,
 input,
 optgroup,
 select,
 textarea {
-  font-family: inherit; /* 1 */
-  font-size: 100%; /* 1 */
-  line-height: 1.15; /* 1 */
-  margin: 0; /* 2 */
+  font-family: inherit;
+  /* 1 */
+  font-size: 100%;
+  /* 1 */
+  line-height: 1.15;
+  /* 1 */
+  margin: 0;
+  /* 2 */
 }
 
 /**
- * Show the overflow in IE.
- * 1. Show the overflow in Edge.
- */
+   * Show the overflow in IE.
+   * 1. Show the overflow in Edge.
+   */
+/* line 176, ../../../OneDrive/Desktop/netmatters-rebuild/scss/base/_normalize.scss */
 button,
-input { /* 1 */
+input {
+  /* 1 */
   overflow: visible;
 }
 
 /**
- * Remove the inheritance of text transform in Edge, Firefox, and IE.
- * 1. Remove the inheritance of text transform in Firefox.
- */
+   * Remove the inheritance of text transform in Edge, Firefox, and IE.
+   * 1. Remove the inheritance of text transform in Firefox.
+   */
+/* line 186, ../../../OneDrive/Desktop/netmatters-rebuild/scss/base/_normalize.scss */
 button,
-select { /* 1 */
+select {
+  /* 1 */
   text-transform: none;
 }
 
 /**
- * Correct the inability to style clickable types in iOS and Safari.
- */
+   * Correct the inability to style clickable types in iOS and Safari.
+   */
+/* line 195, ../../../OneDrive/Desktop/netmatters-rebuild/scss/base/_normalize.scss */
 button,
-[type=button],
-[type=reset],
-[type=submit] {
+[type="button"],
+[type="reset"],
+[type="submit"] {
   -webkit-appearance: button;
 }
 
 /**
- * Remove the inner border and padding in Firefox.
- */
+   * Remove the inner border and padding in Firefox.
+   */
+/* line 206, ../../../OneDrive/Desktop/netmatters-rebuild/scss/base/_normalize.scss */
 button::-moz-focus-inner,
-[type=button]::-moz-focus-inner,
-[type=reset]::-moz-focus-inner,
-[type=submit]::-moz-focus-inner {
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
   border-style: none;
   padding: 0;
 }
 
 /**
- * Restore the focus styles unset by the previous rule.
- */
+   * Restore the focus styles unset by the previous rule.
+   */
+/* line 218, ../../../OneDrive/Desktop/netmatters-rebuild/scss/base/_normalize.scss */
 button:-moz-focusring,
-[type=button]:-moz-focusring,
-[type=reset]:-moz-focusring,
-[type=submit]:-moz-focusring {
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
   outline: 1px dotted ButtonText;
 }
 
 /**
- * Correct the padding in Firefox.
- */
+   * Correct the padding in Firefox.
+   */
+/* line 229, ../../../OneDrive/Desktop/netmatters-rebuild/scss/base/_normalize.scss */
 fieldset {
   padding: 0.35em 0.75em 0.625em;
 }
 
 /**
- * 1. Correct the text wrapping in Edge and IE.
- * 2. Correct the color inheritance from `fieldset` elements in IE.
- * 3. Remove the padding so developers are not caught out when they zero out
- *    `fieldset` elements in all browsers.
- */
+   * 1. Correct the text wrapping in Edge and IE.
+   * 2. Correct the color inheritance from `fieldset` elements in IE.
+   * 3. Remove the padding so developers are not caught out when they zero out
+   *    `fieldset` elements in all browsers.
+   */
+/* line 240, ../../../OneDrive/Desktop/netmatters-rebuild/scss/base/_normalize.scss */
 legend {
-  box-sizing: border-box; /* 1 */
-  color: inherit; /* 2 */
-  display: table; /* 1 */
-  max-width: 100%; /* 1 */
-  padding: 0; /* 3 */
-  white-space: normal; /* 1 */
+  box-sizing: border-box;
+  /* 1 */
+  color: inherit;
+  /* 2 */
+  display: table;
+  /* 1 */
+  max-width: 100%;
+  /* 1 */
+  padding: 0;
+  /* 3 */
+  white-space: normal;
+  /* 1 */
 }
 
 /**
- * Add the correct vertical alignment in Chrome, Firefox, and Opera.
- */
+   * Add the correct vertical alignment in Chrome, Firefox, and Opera.
+   */
+/* line 253, ../../../OneDrive/Desktop/netmatters-rebuild/scss/base/_normalize.scss */
 progress {
   vertical-align: baseline;
 }
 
 /**
- * Remove the default vertical scrollbar in IE 10+.
- */
+   * Remove the default vertical scrollbar in IE 10+.
+   */
+/* line 261, ../../../OneDrive/Desktop/netmatters-rebuild/scss/base/_normalize.scss */
 textarea {
   overflow: auto;
 }
 
 /**
- * 1. Add the correct box sizing in IE 10.
- * 2. Remove the padding in IE 10.
- */
-[type=checkbox],
-[type=radio] {
-  box-sizing: border-box; /* 1 */
-  padding: 0; /* 2 */
+   * 1. Add the correct box sizing in IE 10.
+   * 2. Remove the padding in IE 10.
+   */
+/* line 270, ../../../OneDrive/Desktop/netmatters-rebuild/scss/base/_normalize.scss */
+[type="checkbox"],
+[type="radio"] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */
 }
 
 /**
- * Correct the cursor style of increment and decrement buttons in Chrome.
- */
-[type=number]::-webkit-inner-spin-button,
-[type=number]::-webkit-outer-spin-button {
+   * Correct the cursor style of increment and decrement buttons in Chrome.
+   */
+/* line 280, ../../../OneDrive/Desktop/netmatters-rebuild/scss/base/_normalize.scss */
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
   height: auto;
 }
 
 /**
- * 1. Correct the odd appearance in Chrome and Safari.
- * 2. Correct the outline style in Safari.
- */
-[type=search] {
-  -webkit-appearance: textfield; /* 1 */
-  outline-offset: -2px; /* 2 */
+   * 1. Correct the odd appearance in Chrome and Safari.
+   * 2. Correct the outline style in Safari.
+   */
+/* line 290, ../../../OneDrive/Desktop/netmatters-rebuild/scss/base/_normalize.scss */
+[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  outline-offset: -2px;
+  /* 2 */
 }
 
 /**
- * Remove the inner padding in Chrome and Safari on macOS.
- */
-[type=search]::-webkit-search-decoration {
+   * Remove the inner padding in Chrome and Safari on macOS.
+   */
+/* line 299, ../../../OneDrive/Desktop/netmatters-rebuild/scss/base/_normalize.scss */
+[type="search"]::-webkit-search-decoration {
   -webkit-appearance: none;
 }
 
 /**
- * 1. Correct the inability to style clickable types in iOS and Safari.
- * 2. Change font properties to `inherit` in Safari.
- */
+   * 1. Correct the inability to style clickable types in iOS and Safari.
+   * 2. Change font properties to `inherit` in Safari.
+   */
+/* line 308, ../../../OneDrive/Desktop/netmatters-rebuild/scss/base/_normalize.scss */
 ::-webkit-file-upload-button {
-  -webkit-appearance: button; /* 1 */
-  font: inherit; /* 2 */
+  -webkit-appearance: button;
+  /* 1 */
+  font: inherit;
+  /* 2 */
 }
 
 /* Interactive
-   ========================================================================== */
+     ========================================================================== */
 /*
- * Add the correct display in Edge, IE 10+, and Firefox.
- */
+   * Add the correct display in Edge, IE 10+, and Firefox.
+   */
+/* line 320, ../../../OneDrive/Desktop/netmatters-rebuild/scss/base/_normalize.scss */
 details {
   display: block;
 }
 
 /*
- * Add the correct display in all browsers.
- */
+   * Add the correct display in all browsers.
+   */
+/* line 328, ../../../OneDrive/Desktop/netmatters-rebuild/scss/base/_normalize.scss */
 summary {
   display: list-item;
 }
 
 /* Misc
-   ========================================================================== */
+     ========================================================================== */
 /**
- * Add the correct display in IE 10+.
- */
+   * Add the correct display in IE 10+.
+   */
+/* line 339, ../../../OneDrive/Desktop/netmatters-rebuild/scss/base/_normalize.scss */
 template {
   display: none;
 }
 
 /**
- * Add the correct display in IE 10.
- */
+   * Add the correct display in IE 10.
+   */
+/* line 347, ../../../OneDrive/Desktop/netmatters-rebuild/scss/base/_normalize.scss */
 [hidden] {
   display: none;
 }
 
+/* line 3, ../../../OneDrive/Desktop/netmatters-rebuild/scss/base/_base.scss */
 * {
   box-sizing: border-box;
 }
 
+/* line 7, ../../../OneDrive/Desktop/netmatters-rebuild/scss/base/_base.scss */
 body {
   font-family: "Poppins", sans-serif;
   font-weight: 400;
   font-size: 14px;
-  letter-spacing: 0.7px;
+  letter-spacing: .7px;
   line-height: 1.4rem;
   color: #323544;
 }
 
+/* line 16, ../../../OneDrive/Desktop/netmatters-rebuild/scss/base/_base.scss */
 ul {
   list-style: none;
 }
 
+/* line 20, ../../../OneDrive/Desktop/netmatters-rebuild/scss/base/_base.scss */
+a {
+  color: inherit;
+}
+
+/* line 1, ../../../OneDrive/Desktop/netmatters-rebuild/scss/layout/_container.scss */
 .container {
   padding-left: 25px;
   padding-right: 25px;
@@ -376,36 +456,47 @@ ul {
   margin-left: auto;
   margin-right: auto;
 }
+
 @media (min-width: 769px) {
+  /* line 1, ../../../OneDrive/Desktop/netmatters-rebuild/scss/layout/_container.scss */
   .container {
     width: 95%;
   }
 }
+
 @media (min-width: 926px) {
+  /* line 1, ../../../OneDrive/Desktop/netmatters-rebuild/scss/layout/_container.scss */
   .container {
     width: 90%;
   }
 }
+
 @media (min-width: 1244px) {
+  /* line 1, ../../../OneDrive/Desktop/netmatters-rebuild/scss/layout/_container.scss */
   .container {
     width: 1243px;
   }
 }
 
-.footer-bottom a:visited, footer a:visited, .img-btn:visited {
+/* line 4, ../../../OneDrive/Desktop/netmatters-rebuild/scss/modules/_extends.scss */
+.img-btn:visited, footer a:visited, .footer-bottom a:visited {
   color: #fff;
   border: 5px dotted #fff;
 }
 
-footer ul li:hover, .view-all a:hover, .view-all-top a:hover, .view-work a:hover {
+/* line 11, ../../../OneDrive/Desktop/netmatters-rebuild/scss/modules/_extends.scss */
+.view-work a:hover, .view-all-top a:hover, .view-all a:hover, footer ul li:hover {
   text-decoration: underline;
 }
-footer ul li:visited, .view-all a:visited, .view-all-top a:visited, .view-work a:visited {
+
+/* line 14, ../../../OneDrive/Desktop/netmatters-rebuild/scss/modules/_extends.scss */
+.view-work a:visited, .view-all-top a:visited, .view-all a:visited, footer ul li:visited {
   text-decoration: underline;
   color: #212330;
 }
 
-.developer-nav:hover::after, .cyber-nav:hover::after, .web-nav:hover::after, .telecom-nav:hover::after, .digital-nav:hover::after, .it-nav:hover::after, .software-nav:hover::after {
+/* line 21, ../../../OneDrive/Desktop/netmatters-rebuild/scss/modules/_extends.scss */
+.software-nav:hover::after, .it-nav:hover::after, .digital-nav:hover::after, .telecom-nav:hover::after, .web-nav:hover::after, .cyber-nav:hover::after, .developer-nav:hover::after {
   position: relative;
   content: "";
   width: 0;
@@ -415,13 +506,16 @@ footer ul li:visited, .view-all a:visited, .view-all-top a:visited, .view-work a
   border-right: 65px solid transparent;
   z-index: 2;
 }
+
 @media (min-width: 1244px) {
-  .developer-nav:hover::after, .cyber-nav:hover::after, .web-nav:hover::after, .telecom-nav:hover::after, .digital-nav:hover::after, .it-nav:hover::after, .software-nav:hover::after {
+  /* line 21, ../../../OneDrive/Desktop/netmatters-rebuild/scss/modules/_extends.scss */
+  .software-nav:hover::after, .it-nav:hover::after, .digital-nav:hover::after, .telecom-nav:hover::after, .web-nav:hover::after, .cyber-nav:hover::after, .developer-nav:hover::after {
     border-left: 85px solid transparent;
     border-right: 85px solid transparent;
   }
 }
 
+/* line 1, ../../../OneDrive/Desktop/netmatters-rebuild/scss/modules/_button.scss */
 .btn {
   display: inline-block;
   font-family: inherit;
@@ -437,111 +531,143 @@ footer ul li:visited, .view-all a:visited, .view-all-top a:visited, .view-work a
   cursor: pointer;
 }
 
+/* line 15, ../../../OneDrive/Desktop/netmatters-rebuild/scss/modules/_button.scss */
 .btn-primary {
   background-color: #323544;
   border-color: #323544;
 }
 
+/* line 23, ../../../OneDrive/Desktop/netmatters-rebuild/scss/modules/_button.scss */
 .img-btn {
   position: absolute;
   top: 15px;
   right: 0px;
   padding: 0 10px;
-  font-size: 0.7rem;
+  font-size: .7rem;
   line-height: 1.3rem;
   border-radius: 0;
   z-index: 1;
 }
 
+/* line 36, ../../../OneDrive/Desktop/netmatters-rebuild/scss/modules/_button.scss */
 .notables-btn {
   background-color: #67809F;
 }
 
+/* line 39, ../../../OneDrive/Desktop/netmatters-rebuild/scss/modules/_button.scss */
 .insights-btn {
   background-color: #67809F;
 }
 
+/* line 43, ../../../OneDrive/Desktop/netmatters-rebuild/scss/modules/_button.scss */
 .digital-btn {
   background-color: #2ECC71;
 }
 
+/* line 49, ../../../OneDrive/Desktop/netmatters-rebuild/scss/modules/_button.scss */
 .btn-dark {
   background-color: #212330;
   font-size: 1.3rem;
 }
 
+/* line 56, ../../../OneDrive/Desktop/netmatters-rebuild/scss/modules/_button.scss */
 .google-btn {
   font-size: 1.3rem;
   background-color: #4789f6;
 }
+
+/* line 59, ../../../OneDrive/Desktop/netmatters-rebuild/scss/modules/_button.scss */
 .google-btn:hover {
   background-color: #166AF4;
 }
 
+/* line 64, ../../../OneDrive/Desktop/netmatters-rebuild/scss/modules/_button.scss */
 .trust-btn {
   font-size: 1.3rem;
   background-color: #00ce8c;
 }
+
+/* line 67, ../../../OneDrive/Desktop/netmatters-rebuild/scss/modules/_button.scss */
 .trust-btn:hover {
   background-color: #009B69;
 }
 
+/* line 74, ../../../OneDrive/Desktop/netmatters-rebuild/scss/modules/_button.scss */
 .swan-btn {
   background-color: #6e85a3;
 }
+
+/* line 76, ../../../OneDrive/Desktop/netmatters-rebuild/scss/modules/_button.scss */
 .swan-btn:hover {
   background-color: #566C88;
 }
 
+/* line 81, ../../../OneDrive/Desktop/netmatters-rebuild/scss/modules/_button.scss */
 .guide-btn {
   background-color: #4a88d9;
 }
+
+/* line 83, ../../../OneDrive/Desktop/netmatters-rebuild/scss/modules/_button.scss */
 .guide-btn:hover {
   background-color: #2A6EC6;
 }
 
+/* line 87, ../../../OneDrive/Desktop/netmatters-rebuild/scss/modules/_button.scss */
 .sweet-btn {
   background-color: #32d277;
 }
+
+/* line 89, ../../../OneDrive/Desktop/netmatters-rebuild/scss/modules/_button.scss */
 .sweet-btn:hover {
   background-color: #26AB5F;
 }
 
+/* line 93, ../../../OneDrive/Desktop/netmatters-rebuild/scss/modules/_button.scss */
 .traveller-btn {
   background-color: #9776b4;
 }
+
+/* line 95, ../../../OneDrive/Desktop/netmatters-rebuild/scss/modules/_button.scss */
 .traveller-btn:hover {
   background-color: #7E57A0;
 }
 
+/* line 102, ../../../OneDrive/Desktop/netmatters-rebuild/scss/modules/_button.scss */
 .software-btn {
   background-color: #67809F;
 }
 
+/* line 105, ../../../OneDrive/Desktop/netmatters-rebuild/scss/modules/_button.scss */
 .it-btn {
   background-color: #4183D7;
 }
 
+/* line 108, ../../../OneDrive/Desktop/netmatters-rebuild/scss/modules/_button.scss */
 .digi-btn {
   background-color: #2ECC71;
 }
 
+/* line 111, ../../../OneDrive/Desktop/netmatters-rebuild/scss/modules/_button.scss */
 .telecom-btn {
   background-color: #D64541;
 }
 
+/* line 114, ../../../OneDrive/Desktop/netmatters-rebuild/scss/modules/_button.scss */
 .web-btn {
   background-color: #926FB1;
 }
 
+/* line 117, ../../../OneDrive/Desktop/netmatters-rebuild/scss/modules/_button.scss */
 .cyber-btn {
   background-color: #F62459;
 }
 
+/* line 120, ../../../OneDrive/Desktop/netmatters-rebuild/scss/modules/_button.scss */
 .developer-btn {
   background-color: #CE4125;
 }
 
+/* line 126, ../../../OneDrive/Desktop/netmatters-rebuild/scss/modules/_button.scss */
 .comp-btn {
   background-color: #926FB1;
   font-size: 1.3rem;
@@ -549,24 +675,31 @@ footer ul li:visited, .view-all a:visited, .view-all-top a:visited, .view-work a
   padding: 10px 30px;
 }
 
+/* line 135, ../../../OneDrive/Desktop/netmatters-rebuild/scss/modules/_button.scss */
 .support-btn {
   background-color: #4183D7;
   font-size: 1.2rem;
   padding: 10px 20px;
 }
+
+/* line 139, ../../../OneDrive/Desktop/netmatters-rebuild/scss/modules/_button.scss */
 .support-btn:hover {
   background-color: #286abd;
 }
 
+/* line 145, ../../../OneDrive/Desktop/netmatters-rebuild/scss/modules/_button.scss */
 .contact-btn {
   background-color: #9e9e9e;
   font-size: 1rem;
   padding: 10px 20px;
 }
+
+/* line 149, ../../../OneDrive/Desktop/netmatters-rebuild/scss/modules/_button.scss */
 .contact-btn:hover {
   background-color: #848484;
 }
 
+/* line 156, ../../../OneDrive/Desktop/netmatters-rebuild/scss/modules/_button.scss */
 .phone-btn {
   height: 55px;
   font-size: 2rem;
@@ -574,6 +707,7 @@ footer ul li:visited, .view-all a:visited, .view-all-top a:visited, .view-work a
   color: #323544;
 }
 
+/* line 162, ../../../OneDrive/Desktop/netmatters-rebuild/scss/modules/_button.scss */
 .search-btn {
   height: 55px;
   width: 55px;
@@ -584,11 +718,13 @@ footer ul li:visited, .view-all a:visited, .view-all-top a:visited, .view-work a
   overflow: hidden;
 }
 
+/* line 172, ../../../OneDrive/Desktop/netmatters-rebuild/scss/modules/_button.scss */
 .hamburger-btn {
   height: 45px;
   padding-top: 7px;
 }
 
+/* line 176, ../../../OneDrive/Desktop/netmatters-rebuild/scss/modules/_button.scss */
 .hamburger {
   content: "";
   width: 30px;
@@ -597,47 +733,59 @@ footer ul li:visited, .view-all a:visited, .view-all-top a:visited, .view-work a
   margin: 5px 0;
 }
 
+/* line 3, ../../../OneDrive/Desktop/netmatters-rebuild/scss/modules/_header.scss */
 header {
   height: 100px;
   padding: 20px 0;
 }
 
+/* line 8, ../../../OneDrive/Desktop/netmatters-rebuild/scss/modules/_header.scss */
 .net-logo {
   padding-top: 20px;
   padding-bottom: 20px;
   width: 150px;
 }
+
 @media (min-width: 461px) {
+  /* line 8, ../../../OneDrive/Desktop/netmatters-rebuild/scss/modules/_header.scss */
   .net-logo {
     padding-top: 10px;
     padding-bottom: 10px;
     width: 250px;
   }
 }
+
 @media (min-width: 769px) {
+  /* line 8, ../../../OneDrive/Desktop/netmatters-rebuild/scss/modules/_header.scss */
   .net-logo {
     padding-top: 5px;
     padding-bottom: 5px;
     width: 300px;
   }
 }
+
 @media (min-width: 926px) {
+  /* line 8, ../../../OneDrive/Desktop/netmatters-rebuild/scss/modules/_header.scss */
   .net-logo {
     padding-top: 0;
     padding-bottom: 0;
     width: 330px;
   }
 }
+
 @media (min-width: 1244px) {
+  /* line 8, ../../../OneDrive/Desktop/netmatters-rebuild/scss/modules/_header.scss */
   .net-logo {
     width: 360px;
   }
 }
 
+/* line 33, ../../../OneDrive/Desktop/netmatters-rebuild/scss/modules/_header.scss */
 .search-form {
   display: flex;
 }
 
+/* line 36, ../../../OneDrive/Desktop/netmatters-rebuild/scss/modules/_header.scss */
 .search-input {
   height: 55px;
   width: 200px;
@@ -647,21 +795,25 @@ header {
   border: 1px solid #DDDDDD;
 }
 
+/* line 48, ../../../OneDrive/Desktop/netmatters-rebuild/scss/modules/_header.scss */
 .main-logo {
   float: left;
   position: relative;
 }
 
+/* line 52, ../../../OneDrive/Desktop/netmatters-rebuild/scss/modules/_header.scss */
 .info-bar {
   float: right;
   position: relative;
 }
 
+/* line 57, ../../../OneDrive/Desktop/netmatters-rebuild/scss/modules/_header.scss */
 .flo {
   float: left;
   margin-left: 10px;
 }
 
+/* line 3, ../../../OneDrive/Desktop/netmatters-rebuild/scss/modules/_main-nav.scss */
 .main-nav {
   background-color: #323544;
   width: 100%;
@@ -671,17 +823,20 @@ header {
   margin-top: -15px;
 }
 
+/* line 14, ../../../OneDrive/Desktop/netmatters-rebuild/scss/modules/_main-nav.scss */
 .nav-item a {
   text-decoration: none;
   color: #fff;
 }
 
+/* line 23, ../../../OneDrive/Desktop/netmatters-rebuild/scss/modules/_main-nav.scss */
 .ul {
   display: flex;
   flex-direction: row;
   justify-content: center;
 }
 
+/* line 31, ../../../OneDrive/Desktop/netmatters-rebuild/scss/modules/_main-nav.scss */
 .nav-item {
   height: 100px;
   min-width: 130px;
@@ -689,49 +844,69 @@ header {
   padding-bottom: 15px;
   z-index: 1;
 }
+
 @media (min-width: 1244px) {
+  /* line 31, ../../../OneDrive/Desktop/netmatters-rebuild/scss/modules/_main-nav.scss */
   .nav-item {
     min-width: 170px;
   }
 }
 
+/* line 41, ../../../OneDrive/Desktop/netmatters-rebuild/scss/modules/_main-nav.scss */
 .nav-link {
   text-align: center;
   text-transform: uppercase;
 }
 
+/* line 45, ../../../OneDrive/Desktop/netmatters-rebuild/scss/modules/_main-nav.scss */
 .icon-nav {
   font-size: 1.3rem;
 }
+
+/* line 53, ../../../OneDrive/Desktop/netmatters-rebuild/scss/utilities/_mixins.scss */
 .icon-nav-software {
   color: #67809F;
 }
+
+/* line 53, ../../../OneDrive/Desktop/netmatters-rebuild/scss/utilities/_mixins.scss */
 .icon-nav-it {
   color: #4183D7;
 }
+
+/* line 53, ../../../OneDrive/Desktop/netmatters-rebuild/scss/utilities/_mixins.scss */
 .icon-nav-digital {
   color: #2ECC71;
 }
+
+/* line 53, ../../../OneDrive/Desktop/netmatters-rebuild/scss/utilities/_mixins.scss */
 .icon-nav-telecom {
   color: #D64541;
 }
+
+/* line 53, ../../../OneDrive/Desktop/netmatters-rebuild/scss/utilities/_mixins.scss */
 .icon-nav-web {
   color: #926FB1;
 }
+
+/* line 53, ../../../OneDrive/Desktop/netmatters-rebuild/scss/utilities/_mixins.scss */
 .icon-nav-cyber {
   color: #F62459;
 }
+
+/* line 53, ../../../OneDrive/Desktop/netmatters-rebuild/scss/utilities/_mixins.scss */
 .icon-nav-developer {
   color: #CE4125;
 }
 
+/* line 49, ../../../OneDrive/Desktop/netmatters-rebuild/scss/modules/_main-nav.scss */
 .p-small {
-  font-size: 0.6rem;
-  line-height: 0.7rem;
+  font-size: .6rem;
+  line-height: .7rem;
   margin: 0;
   padding-top: 10px;
 }
 
+/* line 55, ../../../OneDrive/Desktop/netmatters-rebuild/scss/modules/_main-nav.scss */
 .p-big {
   font-size: 1.1rem;
   line-height: 1.2rem;
@@ -739,101 +914,152 @@ header {
   padding: 0;
 }
 
+/* line 65, ../../../OneDrive/Desktop/netmatters-rebuild/scss/modules/_main-nav.scss */
 .software-nav:hover {
   background-color: #67809F;
 }
+
+/* line 67, ../../../OneDrive/Desktop/netmatters-rebuild/scss/modules/_main-nav.scss */
 .software-nav:hover .icon-nav-software {
   color: #fff;
 }
+
+/* line 70, ../../../OneDrive/Desktop/netmatters-rebuild/scss/modules/_main-nav.scss */
 .software-nav:hover .nav-menu {
   background-color: #526781;
 }
+
+/* line 74, ../../../OneDrive/Desktop/netmatters-rebuild/scss/modules/_main-nav.scss */
 .software-nav:hover::after {
   border-top: 35px solid #67809F;
 }
 
+/* line 84, ../../../OneDrive/Desktop/netmatters-rebuild/scss/modules/_main-nav.scss */
 .it-nav:hover {
   background-color: #4183D7;
 }
+
+/* line 86, ../../../OneDrive/Desktop/netmatters-rebuild/scss/modules/_main-nav.scss */
 .it-nav:hover .icon-nav-it {
   color: #fff;
 }
+
+/* line 89, ../../../OneDrive/Desktop/netmatters-rebuild/scss/modules/_main-nav.scss */
 .it-nav:hover .nav-menu {
   background-color: #286abd;
 }
+
+/* line 92, ../../../OneDrive/Desktop/netmatters-rebuild/scss/modules/_main-nav.scss */
 .it-nav:hover::after {
   border-top: 35px solid #4183D7;
 }
 
+/* line 102, ../../../OneDrive/Desktop/netmatters-rebuild/scss/modules/_main-nav.scss */
 .digital-nav:hover {
   background-color: #2ECC71;
 }
+
+/* line 104, ../../../OneDrive/Desktop/netmatters-rebuild/scss/modules/_main-nav.scss */
 .digital-nav:hover .icon-nav-digital {
   color: #fff;
 }
+
+/* line 107, ../../../OneDrive/Desktop/netmatters-rebuild/scss/modules/_main-nav.scss */
 .digital-nav:hover .nav-menu {
   background-color: #25a25a;
 }
+
+/* line 110, ../../../OneDrive/Desktop/netmatters-rebuild/scss/modules/_main-nav.scss */
 .digital-nav:hover::after {
   border-top: 35px solid #2ECC71;
 }
 
+/* line 120, ../../../OneDrive/Desktop/netmatters-rebuild/scss/modules/_main-nav.scss */
 .telecom-nav:hover {
   background-color: #D64541;
 }
+
+/* line 122, ../../../OneDrive/Desktop/netmatters-rebuild/scss/modules/_main-nav.scss */
 .telecom-nav:hover .icon-nav-telecom {
   color: #fff;
 }
+
+/* line 125, ../../../OneDrive/Desktop/netmatters-rebuild/scss/modules/_main-nav.scss */
 .telecom-nav:hover .nav-menu {
   background-color: #bc2c28;
 }
+
+/* line 128, ../../../OneDrive/Desktop/netmatters-rebuild/scss/modules/_main-nav.scss */
 .telecom-nav:hover::after {
   border-top: 35px solid #D64541;
 }
 
+/* line 138, ../../../OneDrive/Desktop/netmatters-rebuild/scss/modules/_main-nav.scss */
 .web-nav:hover {
   background-color: #926FB1;
 }
+
+/* line 140, ../../../OneDrive/Desktop/netmatters-rebuild/scss/modules/_main-nav.scss */
 .web-nav:hover .icon-nav-web {
   color: #fff;
 }
+
+/* line 143, ../../../OneDrive/Desktop/netmatters-rebuild/scss/modules/_main-nav.scss */
 .web-nav:hover .nav-menu {
   background-color: #79539a;
 }
+
+/* line 146, ../../../OneDrive/Desktop/netmatters-rebuild/scss/modules/_main-nav.scss */
 .web-nav:hover::after {
   border-top: 35px solid #926FB1;
 }
 
+/* line 155, ../../../OneDrive/Desktop/netmatters-rebuild/scss/modules/_main-nav.scss */
 .cyber-nav:hover {
   background-color: #F62459;
 }
+
+/* line 157, ../../../OneDrive/Desktop/netmatters-rebuild/scss/modules/_main-nav.scss */
 .cyber-nav:hover .icon-nav-cyber {
   color: #fff;
 }
+
+/* line 160, ../../../OneDrive/Desktop/netmatters-rebuild/scss/modules/_main-nav.scss */
 .cyber-nav:hover .nav-menu {
   background-color: #de093f;
 }
+
+/* line 163, ../../../OneDrive/Desktop/netmatters-rebuild/scss/modules/_main-nav.scss */
 .cyber-nav:hover::after {
   border-top: 35px solid #F62459;
 }
 
+/* line 173, ../../../OneDrive/Desktop/netmatters-rebuild/scss/modules/_main-nav.scss */
 .developer-nav:hover {
   background-color: #CE4125;
 }
+
+/* line 175, ../../../OneDrive/Desktop/netmatters-rebuild/scss/modules/_main-nav.scss */
 .developer-nav:hover .icon-nav-developer {
   color: #fff;
 }
+
+/* line 178, ../../../OneDrive/Desktop/netmatters-rebuild/scss/modules/_main-nav.scss */
 .developer-nav:hover .nav-menu {
   background-color: #a3331d;
 }
+
+/* line 181, ../../../OneDrive/Desktop/netmatters-rebuild/scss/modules/_main-nav.scss */
 .developer-nav:hover::after {
   border-top: 35px solid #CE4125;
 }
 
+/* line 192, ../../../OneDrive/Desktop/netmatters-rebuild/scss/modules/_main-nav.scss */
 .nav-item:hover .nav-menu {
   display: block;
 }
 
+/* line 195, ../../../OneDrive/Desktop/netmatters-rebuild/scss/modules/_main-nav.scss */
 .nav-menu {
   display: none;
   position: absolute;
@@ -844,12 +1070,14 @@ header {
   z-index: 1;
 }
 
+/* line 208, ../../../OneDrive/Desktop/netmatters-rebuild/scss/modules/_main-nav.scss */
 .nav-menu-heading {
   width: 100%;
   font-size: 2rem;
   line-height: 3rem;
 }
 
+/* line 213, ../../../OneDrive/Desktop/netmatters-rebuild/scss/modules/_main-nav.scss */
 .menu-item {
   display: flex;
   font-size: 1.3rem;
@@ -859,6 +1087,7 @@ header {
   padding-left: 10px;
 }
 
+/* line 2, ../../../OneDrive/Desktop/netmatters-rebuild/scss/modules/_banner.scss */
 .banner {
   float: left;
   position: relative;
@@ -866,6 +1095,7 @@ header {
   margin-bottom: 30px;
 }
 
+/* line 8, ../../../OneDrive/Desktop/netmatters-rebuild/scss/modules/_banner.scss */
 .banner-item {
   position: relative;
   display: flex;
@@ -873,6 +1103,7 @@ header {
   justify-content: center;
 }
 
+/* line 16, ../../../OneDrive/Desktop/netmatters-rebuild/scss/modules/_banner.scss */
 .img-container {
   position: absolute;
   right: 0;
@@ -880,13 +1111,14 @@ header {
   height: 550px;
 }
 
+/* line 22, ../../../OneDrive/Desktop/netmatters-rebuild/scss/modules/_banner.scss */
 .banner-img {
   height: 100%;
   width: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 
+/* line 31, ../../../OneDrive/Desktop/netmatters-rebuild/scss/modules/_banner.scss */
 .banner-content {
   color: #fff;
   font-weight: 600;
@@ -899,31 +1131,39 @@ header {
   justify-content: center;
   background-color: rgba(0, 0, 0, 0.3);
 }
+
 @media (min-width: 926px) {
+  /* line 31, ../../../OneDrive/Desktop/netmatters-rebuild/scss/modules/_banner.scss */
   .banner-content {
     text-align: start;
     padding-top: 50px;
   }
 }
 
+/* line 48, ../../../OneDrive/Desktop/netmatters-rebuild/scss/modules/_banner.scss */
 .banner-content h2 {
   font-size: 2.2rem;
   line-height: 3rem;
   margin-top: 0;
 }
+
 @media (min-width: 926px) {
+  /* line 48, ../../../OneDrive/Desktop/netmatters-rebuild/scss/modules/_banner.scss */
   .banner-content h2 {
     font-size: 3rem;
     line-height: 4rem;
   }
 }
 
+/* line 58, ../../../OneDrive/Desktop/netmatters-rebuild/scss/modules/_banner.scss */
 .banner-content p {
   font-size: 1.1rem;
   margin-top: 0;
   padding-bottom: 10px;
 }
+
 @media (min-width: 926px) {
+  /* line 58, ../../../OneDrive/Desktop/netmatters-rebuild/scss/modules/_banner.scss */
   .banner-content p {
     font-size: 1.8rem;
     line-height: 3rem;
@@ -931,6 +1171,7 @@ header {
   }
 }
 
+/* line 71, ../../../OneDrive/Desktop/netmatters-rebuild/scss/modules/_banner.scss */
 .dots {
   display: flex;
   flex-direction: row;
@@ -943,6 +1184,7 @@ header {
   padding: 10px;
 }
 
+/* line 82, ../../../OneDrive/Desktop/netmatters-rebuild/scss/modules/_banner.scss */
 .dot {
   content: "";
   width: 10px;
@@ -953,11 +1195,14 @@ header {
   margin-right: 10px;
 }
 
+/* line 5, ../../../OneDrive/Desktop/netmatters-rebuild/scss/modules/_service.scss */
 .service-heading h2 {
   font-size: 2.6rem;
   margin-top: 20px;
 }
+
 @media (min-width: 769px) {
+  /* line 3, ../../../OneDrive/Desktop/netmatters-rebuild/scss/modules/_service.scss */
   .service-heading {
     display: flex;
     flex-direction: row;
@@ -965,22 +1210,27 @@ header {
   }
 }
 
+/* line 17, ../../../OneDrive/Desktop/netmatters-rebuild/scss/modules/_service.scss */
 .view-work {
   font-size: 1.4rem;
 }
+
+/* line 20, ../../../OneDrive/Desktop/netmatters-rebuild/scss/modules/_service.scss */
 .view-work a {
   text-decoration: none;
 }
 
+/* line 28, ../../../OneDrive/Desktop/netmatters-rebuild/scss/modules/_service.scss */
 .bottom-service {
   text-align: center;
 }
 
+/* line 35, ../../../OneDrive/Desktop/netmatters-rebuild/scss/modules/_service.scss */
 .service-container {
   display: block;
   text-decoration: none;
   text-align: center;
-  font-size: 0.8rem;
+  font-size: .8rem;
   padding: 30px;
   border: 1px solid #DDDDDD;
   box-shadow: 0 15px 20px 10px rgba(0, 0, 0, 0.05);
@@ -988,32 +1238,42 @@ header {
   margin-top: 20px;
   margin-bottom: 20px;
 }
+
+/* line 46, ../../../OneDrive/Desktop/netmatters-rebuild/scss/modules/_service.scss */
 .service-container:visited {
   text-decoration: none;
   color: #323544;
 }
+
+/* line 51, ../../../OneDrive/Desktop/netmatters-rebuild/scss/modules/_service.scss */
 .service-container h2 {
   font-weight: 400;
 }
+
 @media (min-width: 926px) {
+  /* line 35, ../../../OneDrive/Desktop/netmatters-rebuild/scss/modules/_service.scss */
   .service-container {
     height: 350px;
     padding: 20px;
   }
 }
+
 @media (min-width: 1244px) {
+  /* line 35, ../../../OneDrive/Desktop/netmatters-rebuild/scss/modules/_service.scss */
   .service-container {
     height: 360px;
     padding: 30px;
   }
 }
 
+/* line 69, ../../../OneDrive/Desktop/netmatters-rebuild/scss/modules/_service.scss */
 .icon-background {
   height: 80px;
   width: 80px;
   border-radius: 50%;
 }
 
+/* line 75, ../../../OneDrive/Desktop/netmatters-rebuild/scss/modules/_service.scss */
 .icon-service {
   height: 30px;
   width: auto;
@@ -1022,42 +1282,50 @@ header {
   margin-top: 0;
 }
 
+/* line 86, ../../../OneDrive/Desktop/netmatters-rebuild/scss/modules/_service.scss */
 .soft {
   background: #67809F;
   color: #fff;
 }
 
+/* line 90, ../../../OneDrive/Desktop/netmatters-rebuild/scss/modules/_service.scss */
 .it {
   background-color: #4183D7;
   color: #fff;
 }
 
+/* line 94, ../../../OneDrive/Desktop/netmatters-rebuild/scss/modules/_service.scss */
 .digi {
   background-color: #2ECC71;
   color: #fff;
 }
 
+/* line 98, ../../../OneDrive/Desktop/netmatters-rebuild/scss/modules/_service.scss */
 .telecom {
   background-color: #D64541;
   color: #fff;
 }
 
+/* line 102, ../../../OneDrive/Desktop/netmatters-rebuild/scss/modules/_service.scss */
 .web {
   background-color: #926FB1;
   color: #fff;
 }
 
+/* line 106, ../../../OneDrive/Desktop/netmatters-rebuild/scss/modules/_service.scss */
 .cyber {
   background-color: #F62459;
   color: #fff;
 }
 
+/* line 110, ../../../OneDrive/Desktop/netmatters-rebuild/scss/modules/_service.scss */
 .developer {
   background-color: #CE4125;
   color: #fff;
 }
 
 @media (min-width: 769px) {
+  /* line 119, ../../../OneDrive/Desktop/netmatters-rebuild/scss/modules/_service.scss */
   .sml {
     width: 50%;
     float: left;
@@ -1069,6 +1337,7 @@ header {
 }
 
 @media (min-width: 926px) {
+  /* line 130, ../../../OneDrive/Desktop/netmatters-rebuild/scss/modules/_service.scss */
   .med {
     width: 33.33%;
     float: left;
@@ -1079,6 +1348,7 @@ header {
 }
 
 @media (min-width: 1244px) {
+  /* line 141, ../../../OneDrive/Desktop/netmatters-rebuild/scss/modules/_service.scss */
   .lrg {
     width: 25%;
     float: left;
@@ -1088,106 +1358,145 @@ header {
   }
 }
 
+/* line 157, ../../../OneDrive/Desktop/netmatters-rebuild/scss/modules/_service.scss */
 .soft-con:hover {
   background-color: #67809F;
   color: #fff;
 }
+
+/* line 160, ../../../OneDrive/Desktop/netmatters-rebuild/scss/modules/_service.scss */
 .soft-con:hover .soft {
   background-color: #fff;
   color: #67809F;
 }
+
+/* line 164, ../../../OneDrive/Desktop/netmatters-rebuild/scss/modules/_service.scss */
 .soft-con:hover .software-btn {
   background-color: #fff;
   color: #67809F;
 }
 
+/* line 169, ../../../OneDrive/Desktop/netmatters-rebuild/scss/modules/_service.scss */
 .it-con:hover {
   background-color: #4183D7;
   color: #fff;
 }
+
+/* line 172, ../../../OneDrive/Desktop/netmatters-rebuild/scss/modules/_service.scss */
 .it-con:hover .it {
   background-color: #fff;
   color: #4183D7;
 }
+
+/* line 176, ../../../OneDrive/Desktop/netmatters-rebuild/scss/modules/_service.scss */
 .it-con:hover .it-btn {
   background-color: #fff;
   color: #4183D7;
 }
 
+/* line 181, ../../../OneDrive/Desktop/netmatters-rebuild/scss/modules/_service.scss */
 .digi-con:hover {
   background-color: #2ECC71;
   color: #fff;
 }
+
+/* line 184, ../../../OneDrive/Desktop/netmatters-rebuild/scss/modules/_service.scss */
 .digi-con:hover .digi {
   background-color: #fff;
   color: #2ECC71;
 }
+
+/* line 188, ../../../OneDrive/Desktop/netmatters-rebuild/scss/modules/_service.scss */
 .digi-con:hover .digi-btn {
   background-color: #fff;
   color: #2ECC71;
 }
 
+/* line 193, ../../../OneDrive/Desktop/netmatters-rebuild/scss/modules/_service.scss */
 .tel-con:hover {
   background-color: #D64541;
   color: #fff;
 }
+
+/* line 196, ../../../OneDrive/Desktop/netmatters-rebuild/scss/modules/_service.scss */
 .tel-con:hover .telecom {
   background-color: #fff;
   color: #D64541;
 }
+
+/* line 200, ../../../OneDrive/Desktop/netmatters-rebuild/scss/modules/_service.scss */
 .tel-con:hover .telecom-btn {
   background-color: #fff;
   color: #D64541;
 }
 
+/* line 205, ../../../OneDrive/Desktop/netmatters-rebuild/scss/modules/_service.scss */
 .web-con:hover {
   background-color: #926FB1;
   color: #fff;
 }
+
+/* line 208, ../../../OneDrive/Desktop/netmatters-rebuild/scss/modules/_service.scss */
 .web-con:hover .web {
   background-color: #fff;
   color: #926FB1;
 }
+
+/* line 212, ../../../OneDrive/Desktop/netmatters-rebuild/scss/modules/_service.scss */
 .web-con:hover .web-btn {
   background-color: #fff;
   color: #926FB1;
 }
 
+/* line 217, ../../../OneDrive/Desktop/netmatters-rebuild/scss/modules/_service.scss */
 .cyb-con:hover {
   background-color: #F62459;
   color: #fff;
 }
+
+/* line 220, ../../../OneDrive/Desktop/netmatters-rebuild/scss/modules/_service.scss */
 .cyb-con:hover .cyber {
   background-color: #fff;
   color: #F62459;
 }
+
+/* line 224, ../../../OneDrive/Desktop/netmatters-rebuild/scss/modules/_service.scss */
 .cyb-con:hover .cyber-btn {
   background-color: #fff;
   color: #F62459;
 }
 
+/* line 229, ../../../OneDrive/Desktop/netmatters-rebuild/scss/modules/_service.scss */
 .dev-con:hover {
   background-color: #CE4125;
   color: #fff;
 }
+
+/* line 232, ../../../OneDrive/Desktop/netmatters-rebuild/scss/modules/_service.scss */
 .dev-con:hover .developer {
   background-color: #fff;
   color: #CE4125;
 }
+
+/* line 236, ../../../OneDrive/Desktop/netmatters-rebuild/scss/modules/_service.scss */
 .dev-con:hover .developer-btn {
   background-color: #fff;
   color: #CE4125;
 }
 
+/* line 3, ../../../OneDrive/Desktop/netmatters-rebuild/scss/modules/_homepage.scss */
 .homepage-background {
   background-color: #323544;
   color: #fff;
 }
 
+/* line 8, ../../../OneDrive/Desktop/netmatters-rebuild/scss/modules/_homepage.scss */
 .homepage-content {
   padding: 40px 0;
 }
+
 @media (min-width: 926px) {
+  /* line 8, ../../../OneDrive/Desktop/netmatters-rebuild/scss/modules/_homepage.scss */
   .homepage-content {
     display: flex;
     flex-direction: row;
@@ -1195,12 +1504,14 @@ header {
   }
 }
 
+/* line 17, ../../../OneDrive/Desktop/netmatters-rebuild/scss/modules/_homepage.scss */
 .large-h2 {
   font-size: 2.3rem;
   line-height: 3rem;
   margin-top: 20px;
 }
 
+/* line 25, ../../../OneDrive/Desktop/netmatters-rebuild/scss/modules/_homepage.scss */
 .welcome {
   flex: 1;
   font-size: 1rem;
@@ -1208,41 +1519,52 @@ header {
   font-weight: 400;
   margin-right: 20px;
 }
+
+/* line 32, ../../../OneDrive/Desktop/netmatters-rebuild/scss/modules/_homepage.scss */
 .welcome p {
   margin-bottom: 20px;
 }
 
+/* line 38, ../../../OneDrive/Desktop/netmatters-rebuild/scss/modules/_homepage.scss */
 .bold {
   font-weight: 600;
 }
 
+/* line 44, ../../../OneDrive/Desktop/netmatters-rebuild/scss/modules/_homepage.scss */
 .welcome-btn a {
   margin-top: 20px;
   margin-bottom: 20px;
   margin-right: 15px;
 }
+
 @media (min-width: 768px) and (max-width: 925px) {
+  /* line 42, ../../../OneDrive/Desktop/netmatters-rebuild/scss/modules/_homepage.scss */
   .welcome-btn {
     display: flex;
     flex-direction: row;
   }
 }
+
 @media (min-width: 1244px) {
+  /* line 42, ../../../OneDrive/Desktop/netmatters-rebuild/scss/modules/_homepage.scss */
   .welcome-btn {
     display: flex;
     flex-wrap: wrap;
   }
 }
 
+/* line 61, ../../../OneDrive/Desktop/netmatters-rebuild/scss/modules/_homepage.scss */
 .review {
   flex: 1;
 }
 
+/* line 64, ../../../OneDrive/Desktop/netmatters-rebuild/scss/modules/_homepage.scss */
 .stars {
   font-size: 45px;
   margin-bottom: 30px;
 }
 
+/* line 68, ../../../OneDrive/Desktop/netmatters-rebuild/scss/modules/_homepage.scss */
 .client-quote {
   font-size: 1.4rem;
   line-height: 1.8rem;
@@ -1251,23 +1573,31 @@ header {
   margin-bottom: 30px;
 }
 
+/* line 75, ../../../OneDrive/Desktop/netmatters-rebuild/scss/modules/_homepage.scss */
 .quote-author {
   font-size: 1.1rem;
   font-weight: 600;
   color: #848484;
   margin-bottom: 30px;
 }
+
+/* line 81, ../../../OneDrive/Desktop/netmatters-rebuild/scss/modules/_homepage.scss */
 .quote-author a {
   text-decoration: none;
 }
+
+/* line 83, ../../../OneDrive/Desktop/netmatters-rebuild/scss/modules/_homepage.scss */
 .quote-author a:hover {
   text-decoration: underline;
 }
+
+/* line 86, ../../../OneDrive/Desktop/netmatters-rebuild/scss/modules/_homepage.scss */
 .quote-author a:visited {
   text-decoration: underline;
   color: #fff;
 }
 
+/* line 3, ../../../OneDrive/Desktop/netmatters-rebuild/scss/modules/_news.scss */
 .headings-container {
   display: flex;
   flex-direction: row;
@@ -1275,17 +1605,22 @@ header {
   color: #323544;
 }
 
+/* line 10, ../../../OneDrive/Desktop/netmatters-rebuild/scss/modules/_news.scss */
 .heading-top {
   font-size: 1.5rem;
 }
 
+/* line 13, ../../../OneDrive/Desktop/netmatters-rebuild/scss/modules/_news.scss */
 .view-all-top {
   font-size: 1.4rem;
 }
+
+/* line 16, ../../../OneDrive/Desktop/netmatters-rebuild/scss/modules/_news.scss */
 .view-all-top a {
   text-decoration: none;
 }
 
+/* line 27, ../../../OneDrive/Desktop/netmatters-rebuild/scss/modules/_news.scss */
 .article-container {
   border: 1px solid #DDDDDD;
   border-radius: 3px;
@@ -1293,15 +1628,19 @@ header {
   box-shadow: 0 15px 20px 10px rgba(0, 0, 0, 0.05);
 }
 
+/* line 36, ../../../OneDrive/Desktop/netmatters-rebuild/scss/modules/_news.scss */
 .article-image {
   position: relative;
 }
+
+/* line 39, ../../../OneDrive/Desktop/netmatters-rebuild/scss/modules/_news.scss */
 .article-image img {
   height: auto;
   max-width: 100%;
   vertical-align: middle;
 }
 
+/* line 50, ../../../OneDrive/Desktop/netmatters-rebuild/scss/modules/_news.scss */
 .text-block {
   display: flex;
   flex-direction: column;
@@ -1311,30 +1650,37 @@ header {
   font-size: 0.8rem;
   line-height: 1.4rem;
 }
+
+/* line 59, ../../../OneDrive/Desktop/netmatters-rebuild/scss/modules/_news.scss */
 .text-block p {
   margin-top: 0;
   margin-bottom: 30px;
   min-height: 80px;
 }
 
+/* line 66, ../../../OneDrive/Desktop/netmatters-rebuild/scss/modules/_news.scss */
 .block-text {
   flex: 2;
   min-height: 200px;
 }
 
+/* line 70, ../../../OneDrive/Desktop/netmatters-rebuild/scss/modules/_news.scss */
 .user {
   flex: 1;
   display: flex;
   flex-direction: row;
-  font-size: 0.8rem;
+  font-size: .8rem;
   margin-top: 30px;
   padding-top: 30px;
   border-top: 1px solid #848484;
 }
+
+/* line 79, ../../../OneDrive/Desktop/netmatters-rebuild/scss/modules/_news.scss */
 .user strong {
   color: #323544;
 }
 
+/* line 85, ../../../OneDrive/Desktop/netmatters-rebuild/scss/modules/_news.scss */
 .notables h3 {
   color: #67809F;
   font-size: 1rem;
@@ -1344,14 +1690,18 @@ header {
   margin-top: 0;
 }
 
+/* line 94, ../../../OneDrive/Desktop/netmatters-rebuild/scss/modules/_news.scss */
 .avatar {
   margin-right: 30px;
   width: 60px;
 }
+
+/* line 98, ../../../OneDrive/Desktop/netmatters-rebuild/scss/modules/_news.scss */
 .avatar img {
   border-radius: 50%;
 }
 
+/* line 109, ../../../OneDrive/Desktop/netmatters-rebuild/scss/modules/_news.scss */
 .insights h3 {
   color: #67809F;
   font-size: 1rem;
@@ -1360,6 +1710,7 @@ header {
   margin-top: 0;
 }
 
+/* line 118, ../../../OneDrive/Desktop/netmatters-rebuild/scss/modules/_news.scss */
 .digital h3 {
   color: #2ECC71;
   font-size: 1rem;
@@ -1368,42 +1719,53 @@ header {
   margin-top: 0;
 }
 
+/* line 129, ../../../OneDrive/Desktop/netmatters-rebuild/scss/modules/_news.scss */
 .news-articles {
   display: grid;
   grid-template-columns: auto;
-  -moz-column-gap: 30px;
-       column-gap: 30px;
+  column-gap: 30px;
 }
+
 @media (min-width: 769px) {
+  /* line 129, ../../../OneDrive/Desktop/netmatters-rebuild/scss/modules/_news.scss */
   .news-articles {
     grid-template-columns: 50% 50%;
   }
 }
+
 @media (min-width: 1244px) {
+  /* line 129, ../../../OneDrive/Desktop/netmatters-rebuild/scss/modules/_news.scss */
   .news-articles {
     grid-template-columns: 33% 33% 33%;
   }
 }
 
 @media (min-width: 768px) and (max-width: 1243px) {
+  /* line 142, ../../../OneDrive/Desktop/netmatters-rebuild/scss/modules/_news.scss */
   #hide {
     display: none;
   }
 }
 
+/* line 150, ../../../OneDrive/Desktop/netmatters-rebuild/scss/modules/_news.scss */
 .view-all {
   font-size: 1.4rem;
   text-align: center;
   color: #323544;
 }
+
+/* line 155, ../../../OneDrive/Desktop/netmatters-rebuild/scss/modules/_news.scss */
 .view-all a {
   text-decoration: none;
 }
+
+/* line 159, ../../../OneDrive/Desktop/netmatters-rebuild/scss/modules/_news.scss */
 .view-all h3 {
   margin-top: 0;
   margin-bottom: 0;
 }
 
+/* line 4, ../../../OneDrive/Desktop/netmatters-rebuild/scss/modules/_carousel.scss */
 .section {
   display: flex;
   flex-direction: row;
@@ -1416,12 +1778,15 @@ header {
   margin-bottom: 50px;
 }
 
+/* line 16, ../../../OneDrive/Desktop/netmatters-rebuild/scss/modules/_carousel.scss */
 .section-item {
   position: relative;
   margin-right: 30px;
   height: auto;
   width: auto;
 }
+
+/* line 22, ../../../OneDrive/Desktop/netmatters-rebuild/scss/modules/_carousel.scss */
 .section-item img {
   display: block;
   height: auto;
@@ -1430,14 +1795,18 @@ header {
   max-height: 70px;
   filter: grayscale(100%);
 }
+
+/* line 29, ../../../OneDrive/Desktop/netmatters-rebuild/scss/modules/_carousel.scss */
 .section-item img:hover {
   filter: none;
 }
 
+/* line 38, ../../../OneDrive/Desktop/netmatters-rebuild/scss/modules/_carousel.scss */
 .section-item:hover .description {
   display: block;
 }
 
+/* line 41, ../../../OneDrive/Desktop/netmatters-rebuild/scss/modules/_carousel.scss */
 .description {
   display: none;
   position: absolute;
@@ -1446,6 +1815,7 @@ header {
   bottom: 100%;
 }
 
+/* line 48, ../../../OneDrive/Desktop/netmatters-rebuild/scss/modules/_carousel.scss */
 .pop-out {
   background-color: #323544;
   color: #fff;
@@ -1455,26 +1825,37 @@ header {
   margin: 0 auto 40px;
   border-bottom: 2px solid #323544;
 }
+
+/* line 57, ../../../OneDrive/Desktop/netmatters-rebuild/scss/modules/_carousel.scss */
 .pop-out h3 {
   font-size: 1.2rem;
   font-weight: 400;
   margin-top: 0;
 }
+
+/* line 62, ../../../OneDrive/Desktop/netmatters-rebuild/scss/modules/_carousel.scss */
 .pop-out p {
   font-size: 0.8rem;
 }
+
+/* line 65, ../../../OneDrive/Desktop/netmatters-rebuild/scss/modules/_carousel.scss */
 .pop-out p a {
   text-decoration: none;
   color: #fff;
 }
+
+/* line 68, ../../../OneDrive/Desktop/netmatters-rebuild/scss/modules/_carousel.scss */
 .pop-out p a:visited {
   text-decoration: none;
   color: #fff;
 }
+
+/* line 72, ../../../OneDrive/Desktop/netmatters-rebuild/scss/modules/_carousel.scss */
 .pop-out p a:hover {
   text-decoration: underline;
 }
 
+/* line 83, ../../../OneDrive/Desktop/netmatters-rebuild/scss/modules/_carousel.scss */
 .arrow {
   position: absolute;
   width: 0;
@@ -1485,6 +1866,7 @@ header {
   right: 45%;
 }
 
+/* line 4, ../../../OneDrive/Desktop/netmatters-rebuild/scss/modules/_form.scss */
 .newsletter-container {
   background: #DDDDDD;
   padding-top: 30px;
@@ -1492,6 +1874,7 @@ header {
   color: #323544;
 }
 
+/* line 13, ../../../OneDrive/Desktop/netmatters-rebuild/scss/modules/_form.scss */
 .sign-up h2 {
   display: inline-block;
   font-size: 2rem;
@@ -1500,13 +1883,16 @@ header {
   padding: 5px;
 }
 
+/* line 25, ../../../OneDrive/Desktop/netmatters-rebuild/scss/modules/_form.scss */
 .sign-up-input {
   display: flex;
   flex-direction: column;
   width: 100%;
   padding-bottom: 10px;
 }
+
 @media (min-width: 926px) {
+  /* line 25, ../../../OneDrive/Desktop/netmatters-rebuild/scss/modules/_form.scss */
   .sign-up-input {
     flex-direction: row;
     margin-left: auto;
@@ -1514,6 +1900,7 @@ header {
   }
 }
 
+/* line 40, ../../../OneDrive/Desktop/netmatters-rebuild/scss/modules/_form.scss */
 .input-heading {
   display: inline-block;
   font-weight: 600;
@@ -1521,18 +1908,22 @@ header {
   margin-bottom: 5px;
 }
 
+/* line 47, ../../../OneDrive/Desktop/netmatters-rebuild/scss/modules/_form.scss */
 .input-style {
   flex: 1;
   margin-top: 10px;
   margin-bottom: 10px;
 }
+
 @media (min-width: 926px) {
+  /* line 47, ../../../OneDrive/Desktop/netmatters-rebuild/scss/modules/_form.scss */
   .input-style {
     margin-right: 20px;
     max-width: 570px;
   }
 }
 
+/* line 57, ../../../OneDrive/Desktop/netmatters-rebuild/scss/modules/_form.scss */
 .form-input {
   width: 100%;
   height: 50px;
@@ -1544,6 +1935,7 @@ header {
   box-shadow: inset 0 0 3px #c4c4c4;
 }
 
+/* line 70, ../../../OneDrive/Desktop/netmatters-rebuild/scss/modules/_form.scss */
 .marketing-checkbox {
   display: flex;
   flex-direction: row;
@@ -1552,6 +1944,7 @@ header {
   padding-bottom: 20px;
 }
 
+/* line 78, ../../../OneDrive/Desktop/netmatters-rebuild/scss/modules/_form.scss */
 .check-box {
   min-width: 50px;
   width: 35px;
@@ -1560,24 +1953,31 @@ header {
   border-color: #323544;
   cursor: pointer;
 }
+
+/* line 85, ../../../OneDrive/Desktop/netmatters-rebuild/scss/modules/_form.scss */
 .check-box:checked {
   accent-color: #323544;
 }
 
+/* line 90, ../../../OneDrive/Desktop/netmatters-rebuild/scss/modules/_form.scss */
 .media {
   font-size: 1rem;
   font-weight: 600;
   line-height: 1.8rem;
 }
 
+/* line 96, ../../../OneDrive/Desktop/netmatters-rebuild/scss/modules/_form.scss */
 .media a {
   color: #323544;
   text-decoration: underline;
 }
+
+/* line 99, ../../../OneDrive/Desktop/netmatters-rebuild/scss/modules/_form.scss */
 .media a:hover {
   color: #212330;
 }
 
+/* line 1, ../../../OneDrive/Desktop/netmatters-rebuild/scss/modules/_footer.scss */
 footer {
   background: #323544;
   color: #fff;
@@ -1586,52 +1986,67 @@ footer {
   padding-bottom: 10px;
   padding-top: 15px;
 }
+
+/* line 9, ../../../OneDrive/Desktop/netmatters-rebuild/scss/modules/_footer.scss */
 footer h4 {
   text-transform: uppercase;
   font-size: 1rem;
   margin-bottom: 24px;
 }
+
+/* line 14, ../../../OneDrive/Desktop/netmatters-rebuild/scss/modules/_footer.scss */
 footer a {
   text-decoration: none;
 }
 
+/* line 24, ../../../OneDrive/Desktop/netmatters-rebuild/scss/modules/_footer.scss */
 .footer {
   flex-direction: column;
   padding-bottom: 10px;
   width: auto;
 }
+
 @media (min-width: 1244px) {
+  /* line 24, ../../../OneDrive/Desktop/netmatters-rebuild/scss/modules/_footer.scss */
   .footer {
     display: flex;
     flex-flow: row wrap;
   }
 }
 
+/* line 38, ../../../OneDrive/Desktop/netmatters-rebuild/scss/modules/_footer.scss */
 .footer-social {
   margin-left: 0;
   margin-bottom: 15px;
   flex-direction: column;
 }
+
 @media (min-width: 1244px) {
+  /* line 38, ../../../OneDrive/Desktop/netmatters-rebuild/scss/modules/_footer.scss */
   .footer-social {
     flex: 1;
   }
 }
 
+/* line 48, ../../../OneDrive/Desktop/netmatters-rebuild/scss/modules/_footer.scss */
 .footer-logo > img {
   width: 250px;
   height: auto;
 }
+
 @media (min-width: 461px) {
+  /* line 48, ../../../OneDrive/Desktop/netmatters-rebuild/scss/modules/_footer.scss */
   .footer-logo > img {
     width: 320px;
   }
 }
 
+/* line 56, ../../../OneDrive/Desktop/netmatters-rebuild/scss/modules/_footer.scss */
 .social-icons {
   flex-direction: row;
 }
 
+/* line 61, ../../../OneDrive/Desktop/netmatters-rebuild/scss/modules/_footer.scss */
 .btn-social {
   text-align: center;
   text-decoration: none;
@@ -1642,74 +2057,95 @@ footer a {
   padding: 15px 22px 17px;
   background-color: #212330;
 }
+
 @media (min-width: 1px) and (max-width: 460px) {
+  /* line 61, ../../../OneDrive/Desktop/netmatters-rebuild/scss/modules/_footer.scss */
   .btn-social {
     width: 35%;
   }
 }
 
+/* line 75, ../../../OneDrive/Desktop/netmatters-rebuild/scss/modules/_footer.scss */
 .facebook .linkden .twitter .instagram {
   flex-grow: 1;
 }
 
+/* line 79, ../../../OneDrive/Desktop/netmatters-rebuild/scss/modules/_footer.scss */
 .facebook:hover {
   background-color: #3B5998;
 }
 
+/* line 83, ../../../OneDrive/Desktop/netmatters-rebuild/scss/modules/_footer.scss */
 .linkden:hover {
   background-color: #0077B5;
 }
 
+/* line 86, ../../../OneDrive/Desktop/netmatters-rebuild/scss/modules/_footer.scss */
 .twitter:hover {
   background-color: #00ACED;
 }
 
+/* line 89, ../../../OneDrive/Desktop/netmatters-rebuild/scss/modules/_footer.scss */
 .instagram:hover {
   background-color: #D93175;
 }
 
+/* line 96, ../../../OneDrive/Desktop/netmatters-rebuild/scss/modules/_footer.scss */
 .info-container {
   flex-direction: column;
 }
+
 @media (min-width: 769px) {
+  /* line 96, ../../../OneDrive/Desktop/netmatters-rebuild/scss/modules/_footer.scss */
   .info-container {
     flex-direction: row;
     width: 100%;
   }
 }
+
 @media (min-width: 1244px) {
+  /* line 96, ../../../OneDrive/Desktop/netmatters-rebuild/scss/modules/_footer.scss */
   .info-container {
     flex-direction: row;
     flex: 2;
   }
 }
 
+/* line 109, ../../../OneDrive/Desktop/netmatters-rebuild/scss/modules/_footer.scss */
 .info-list {
   flex-grow: 1;
   margin-right: 15px;
   margin-bottom: 15px;
 }
+
 @media (min-width: 769px) {
+  /* line 109, ../../../OneDrive/Desktop/netmatters-rebuild/scss/modules/_footer.scss */
   .info-list {
     width: 35%;
   }
 }
+
 @media (min-width: 926px) {
+  /* line 109, ../../../OneDrive/Desktop/netmatters-rebuild/scss/modules/_footer.scss */
   .info-list {
     width: 20%;
   }
 }
 
+/* line 121, ../../../OneDrive/Desktop/netmatters-rebuild/scss/modules/_footer.scss */
 footer ul {
   list-style: none;
   padding: 0;
   margin: 0;
 }
+
+/* line 126, ../../../OneDrive/Desktop/netmatters-rebuild/scss/modules/_footer.scss */
 footer ul li {
-  font-size: 0.8rem;
+  font-size: .8rem;
   line-height: 1.3rem;
 }
 
+/* line 138, ../../../OneDrive/Desktop/netmatters-rebuild/scss/modules/_footer.scss */
 .footer-bottom {
   display: flex;
   flex-direction: column;
@@ -1719,36 +2155,47 @@ footer ul li {
   padding-bottom: 20px;
   background-color: #212330;
   color: #fff;
-  font-size: 0.8rem;
+  font-size: .8rem;
 }
+
+/* line 149, ../../../OneDrive/Desktop/netmatters-rebuild/scss/modules/_footer.scss */
 .footer-bottom a {
   text-decoration: none;
 }
 
+/* line 157, ../../../OneDrive/Desktop/netmatters-rebuild/scss/modules/_footer.scss */
 .copyright {
   display: flex;
   flex-direction: column;
 }
+
+/* line 161, ../../../OneDrive/Desktop/netmatters-rebuild/scss/modules/_footer.scss */
 .copyright ul {
   list-style: none;
   padding: 0;
   margin: 0;
 }
+
 @media (min-width: 769px) {
+  /* line 157, ../../../OneDrive/Desktop/netmatters-rebuild/scss/modules/_footer.scss */
   .copyright {
     flex-direction: row;
     flex-wrap: wrap;
   }
 }
 
+/* line 175, ../../../OneDrive/Desktop/netmatters-rebuild/scss/modules/_footer.scss */
 .copyright-item {
   display: flex;
 }
+
 @media (min-width: 769px) {
+  /* line 175, ../../../OneDrive/Desktop/netmatters-rebuild/scss/modules/_footer.scss */
   .copyright-item {
     flex-direction: row;
     flex-wrap: wrap;
   }
+  /* line 181, ../../../OneDrive/Desktop/netmatters-rebuild/scss/modules/_footer.scss */
   .copyright-item li:before {
     content: "-";
     margin: 5px;
@@ -1756,7 +2203,10 @@ footer ul li {
 }
 
 @media (min-width: 769px) {
+  /* line 188, ../../../OneDrive/Desktop/netmatters-rebuild/scss/modules/_footer.scss */
   .vis {
     display: none;
   }
-}/*# sourceMappingURL=style.css.map */
+}
+
+/*# sourceMappingURL=style.css.map */
