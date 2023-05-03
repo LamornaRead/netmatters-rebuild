@@ -967,11 +967,17 @@ header {
 
 .menu-item {
   display: flex;
-  font-size: 1.3rem;
+  font-size: .8rem;
   line-height: 2.5rem;
-  width: 33%;
+  width: 33.33%;
   margin-top: 20px;
   padding-left: 10px;
+}
+
+@media (min-width: 1244px) {
+  .menu-item {
+    font-size: 1rem;
+  }
 }
 
 .banner {

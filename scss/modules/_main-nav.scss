@@ -212,9 +212,12 @@
 }
 .menu-item {
     display: flex;
-    font-size: 1.3rem;
+    font-size: .8rem;
     line-height: 2.5rem;
-    width: 33%;
+    width: 33.33%;
     margin-top: 20px;
     padding-left: 10px;
+    @include mq(x-large){
+        font-size: 1rem;
+    }
 }
