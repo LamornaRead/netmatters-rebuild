@@ -43,6 +43,7 @@
     border-radius: 15px;
     margin-top: 20px;
     margin-bottom: 20px;
+    transition: .5s ease;
     &:visited {
         text-decoration: none;
         color: $dark-grey;
@@ -60,6 +61,11 @@
         height: 360px;
         padding: 30px;
     }
+}
+
+.service-container:hover {
+    transform: translateY(-10px);
+    transition: .5s ease;
 }
 
 

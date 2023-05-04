@@ -400,6 +400,7 @@ ul {
 
 a {
   color: inherit;
+  background: transparent;
 }
 
 .container {
@@ -1116,6 +1117,7 @@ header {
   border-radius: 15px;
   margin-top: 20px;
   margin-bottom: 20px;
+  transition: .5s ease;
 }
 
 .service-container:visited {
@@ -1139,6 +1141,11 @@ header {
     height: 360px;
     padding: 30px;
   }
+}
+
+.service-container:hover {
+  transform: translateY(-10px);
+  transition: .5s ease;
 }
 
 .icon-background {
@@ -1443,10 +1450,26 @@ header {
 }
 
 .article-container {
+  position: relative;
   border: 1px solid #DDDDDD;
   border-radius: 3px;
   margin-bottom: 40px;
   box-shadow: 0 15px 20px 10px rgba(0, 0, 0, 0.05);
+  transition: .5s ease;
+}
+
+.article-container:hover {
+  transform: translateY(-10px);
+  transition: .5s ease;
+}
+
+.article-link {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
 }
 
 .article-image {
@@ -1487,7 +1510,7 @@ header {
   font-size: .8rem;
   margin-top: 30px;
   padding-top: 30px;
-  border-top: 1px solid #848484;
+  border-top: 1px solid #ccc;
 }
 
 .user strong {
