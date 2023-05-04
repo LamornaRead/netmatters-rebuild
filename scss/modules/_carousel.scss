@@ -1,15 +1,19 @@
 //clients carousel
 
-.carousel {
+.carousel-partners {
     width: 100%;
     overflow: hidden;
+}
+
+.carousel-clients {
+    width: 100%;
 }
 
 .section {
     display: flex;
     flex-direction: row;
     height: 70px;
-    width: auto;
+    min-width: 100%;
     padding: 50px 25px;
     align-items: center;
     justify-content: space-between;
