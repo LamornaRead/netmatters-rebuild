@@ -20,13 +20,13 @@
   }
 }
 
-@media (min-width: 768px) and (max-width: 925px) {
+@media (min-width: 768px) and (max-width: 992px) {
   .medium-hidden {
     display: none;
   }
 }
 
-@media (min-width: 925px) and (max-width: 1243px) {
+@media (min-width: 992px) and (max-width: 1243px) {
   .large-hidden {
     display: none;
   }
@@ -416,7 +416,7 @@ a {
   }
 }
 
-@media (min-width: 926px) {
+@media (min-width: 993px) {
   .container {
     width: 90%;
   }
@@ -506,6 +506,10 @@ a {
 .btn-dark {
   background-color: #212330;
   font-size: 1.3rem;
+}
+
+.btn-dark:hover {
+  background-color: #0c0d12;
 }
 
 .google-btn {
@@ -647,7 +651,7 @@ header {
   padding: 20px 0;
 }
 
-@media (min-width: 926px) {
+@media (min-width: 993px) {
   header {
     height: 100px;
   }
@@ -1020,7 +1024,7 @@ header {
   background-color: rgba(0, 0, 0, 0.3);
 }
 
-@media (min-width: 926px) {
+@media (min-width: 993px) {
   .banner-content {
     text-align: start;
     padding-top: 50px;
@@ -1033,7 +1037,7 @@ header {
   margin-top: 0;
 }
 
-@media (min-width: 926px) {
+@media (min-width: 993px) {
   .banner-content h2 {
     font-size: 3rem;
     line-height: 4rem;
@@ -1046,7 +1050,7 @@ header {
   padding-bottom: 10px;
 }
 
-@media (min-width: 926px) {
+@media (min-width: 993px) {
   .banner-content p {
     font-size: 1.8rem;
     line-height: 3rem;
@@ -1123,7 +1127,7 @@ header {
   font-weight: 400;
 }
 
-@media (min-width: 926px) {
+@media (min-width: 993px) {
   .service-container {
     height: 350px;
     padding: 20px;
@@ -1197,7 +1201,7 @@ header {
   }
 }
 
-@media (min-width: 926px) {
+@media (min-width: 993px) {
   .med {
     width: 33.33%;
     float: left;
@@ -1331,7 +1335,7 @@ header {
   padding: 40px 0;
 }
 
-@media (min-width: 926px) {
+@media (min-width: 993px) {
   .homepage-content {
     display: flex;
     flex-direction: row;
@@ -1367,7 +1371,7 @@ header {
   margin-right: 15px;
 }
 
-@media (min-width: 768px) and (max-width: 925px) {
+@media (min-width: 768px) and (max-width: 992px) {
   .welcome-btn {
     display: flex;
     flex-direction: row;
@@ -1423,6 +1427,7 @@ header {
   flex-direction: row;
   justify-content: space-between;
   color: #323544;
+  margin: 20px 0;
 }
 
 .heading-top {
@@ -1562,6 +1567,11 @@ header {
   margin-bottom: 0;
 }
 
+.carousel {
+  width: 100%;
+  overflow: hidden;
+}
+
 .section {
   display: flex;
   flex-direction: row;
@@ -1672,7 +1682,7 @@ header {
   padding-bottom: 10px;
 }
 
-@media (min-width: 926px) {
+@media (min-width: 993px) {
   .sign-up-input {
     flex-direction: row;
     margin-left: auto;
@@ -1693,7 +1703,7 @@ header {
   margin-bottom: 10px;
 }
 
-@media (min-width: 926px) {
+@media (min-width: 993px) {
   .input-style {
     margin-right: 20px;
     max-width: 570px;
@@ -1873,7 +1883,7 @@ footer a {
   }
 }
 
-@media (min-width: 926px) {
+@media (min-width: 993px) {
   .info-list {
     width: 20%;
   }

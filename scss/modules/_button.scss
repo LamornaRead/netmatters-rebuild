@@ -48,7 +48,10 @@
 
 .btn-dark {
     background-color: $black-grey;
-    font-size: 1.3rem;
+    font-size: 1.3rem; 
+    &:hover {
+        background-color: darken($black-grey , 10%);
+    }
 }
 
 //review buttons 
