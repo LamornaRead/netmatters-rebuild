@@ -474,11 +474,11 @@ a {
   color: #fff;
   border-radius: 3px;
   cursor: pointer;
+  border: none;
 }
 
 .btn-primary {
   background-color: #323544;
-  border-color: #323544;
 }
 
 .img-btn {
@@ -1685,9 +1685,11 @@ header {
 
 .newsletter-container {
   background: #DDDDDD;
-  padding-top: 30px;
-  padding-bottom: 30px;
+  padding-top: 50px;
+  padding-bottom: 50px;
   color: #323544;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .sign-up h2 {
@@ -1695,7 +1697,7 @@ header {
   font-size: 2rem;
   font-weight: 400;
   margin: 0;
-  padding: 5px;
+  padding: 5px 0;
 }
 
 .sign-up-input {
@@ -1750,10 +1752,14 @@ header {
   border: 1px solid #51cbee;
 }
 
+.preference {
+  margin-bottom: 20px;
+}
+
 .marketing-checkbox {
   display: flex;
   flex-direction: row;
-  width: 100%;
+  min-width: 100%;
   padding-top: 5px;
   padding-bottom: 20px;
 }
@@ -1762,7 +1768,8 @@ header {
   appearance: none;
   font: inherit;
   max-width: 35px;
-  max-height: 35px;
+  min-width: 35px;
+  height: 35px;
   width: 100%;
   margin-left: 0;
   margin-right: 20px;
@@ -1791,6 +1798,7 @@ header {
   font-size: 1rem;
   font-weight: 600;
   line-height: 1.8rem;
+  min-width: 80%;
 }
 
 .media a {
