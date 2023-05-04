@@ -60,9 +60,15 @@
     font-size: 16px;
     line-height: 1.4rem;
     padding: 5px 15px;
-    border: 1px solid darken($light-grey, 20%);
+    border: 1px solid #ccc;
     border-radius: 2px;
-    box-shadow: inset 0 0 3px darken($light-grey, 10%);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+    outline: none;
+}
+
+.form-input:focus {
+    box-shadow: 0 0 5px rgba(81, 203, 238, 1);
+    border: 1px solid rgba(81, 203, 238, 1);
 }
 
 //tick box and media
@@ -76,16 +82,34 @@
 }
 
 .check-box {
-    min-width: 50px;
-    width: 35px;
-    height: 35px;
+    appearance: none;
+    font: inherit;
+    max-width: 35px;
+    max-height: 35px;
+    width: 100%;
     margin-left: 0;
-    border-color: $dark-grey;
+    margin-right: 20px;
     cursor: pointer;
-    &:checked {
-        accent-color: $dark-grey;
-    }
+    text-align: center;
+    border: 3px solid $black-grey;
+    border-radius: 3px;
+    padding: 3px;
 }
+
+.check-box::before {
+    content: "";
+
+}
+
+.check-box:checked::before {
+    content: "\2713";
+    font-size: 1.3rem;
+    color: $white;
+}
+.check-box:checked {
+    background-color: $black-grey;
+}
+
 
 .media {
     font-size: 1rem;
