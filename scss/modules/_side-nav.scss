@@ -6,11 +6,17 @@
     position: fixed;
     width: 280px;
     top: 0;
-    right: 0;
+    right: -280px;
     z-index: 1;
     text-transform: uppercase;
-
 }
+
+.side-nav.active {
+    right: 0;
+}
+
+
+
 .side-nav-ul {
     padding: 10px 20px;
 }
@@ -18,6 +24,7 @@
 .contact-li {
     @include nav-box;
     font-size: 1.1rem;
+    text-align: center;
 }
 
 .li-heading {
@@ -84,3 +91,15 @@
         background-color: rgba($color: $white, $alpha: .1);
     }
 }
+
+// .side-nav-outer {
+//         position: fixed; /* Sit on top of the page content */
+//         width: 100%; /* Full width (cover the whole page) */
+//         height: 100%; /* Full height (cover the whole page) */
+//         top: 0;
+//         left: 0;
+//         right: 0;
+//         bottom: 0;
+//         background-color: rgba(0,0,0,0.5); /* Black background with opacity */
+//         cursor: pointer; /* Add a pointer on hover */
+// }

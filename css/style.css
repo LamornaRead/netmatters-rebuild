@@ -430,6 +430,16 @@ a {
   }
 }
 
+.container-main {
+  position: relative;
+  left: 0;
+}
+
+.container-main.active {
+  left: -280px;
+  overflow: hidden;
+}
+
 .img-btn:visited, footer a:visited, .footer-bottom a:visited {
   color: #fff;
   border: 5px dotted #fff;
@@ -713,10 +723,10 @@ a {
 
 .bar {
   content: "";
-  width: 30px;
-  height: 3px;
+  width: 25px;
+  height: 2px;
   background-color: #fff;
-  margin: 6px 0;
+  margin: 6px auto;
   transition: all 0.3s ease-in-out;
 }
 
@@ -1077,9 +1087,13 @@ header {
   position: fixed;
   width: 280px;
   top: 0;
-  right: 0;
+  right: -280px;
   z-index: 1;
   text-transform: uppercase;
+}
+
+.side-nav.active {
+  right: 0;
 }
 
 .side-nav-ul {
@@ -1093,6 +1107,7 @@ header {
   border-radius: 3px;
   margin-bottom: 20px;
   font-size: 1.1rem;
+  text-align: center;
 }
 
 .contact-li:hover {
