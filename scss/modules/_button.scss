@@ -229,14 +229,26 @@
     overflow: hidden;
 }
 
-.hamburger-btn {
+.hamburger {
     height: 45px;
     padding-top: 7px;
 }
-.hamburger {
+
+.bar {
     content: "";
     width: 30px;
     height: 3px;
     background-color: $white;
-    margin: 5px 0;
+    margin: 6px 0;
+    transition: all 0.3s ease-in-out;
+}
+
+.hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+}
+.hamburger.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+}
+.hamburger.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
 }

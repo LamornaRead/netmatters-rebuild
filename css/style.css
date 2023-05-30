@@ -706,17 +706,30 @@ a {
   overflow: hidden;
 }
 
-.hamburger-btn {
+.hamburger {
   height: 45px;
   padding-top: 7px;
 }
 
-.hamburger {
+.bar {
   content: "";
   width: 30px;
   height: 3px;
   background-color: #fff;
-  margin: 5px 0;
+  margin: 6px 0;
+  transition: all 0.3s ease-in-out;
+}
+
+.hamburger.active .bar:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.active .bar:nth-child(1) {
+  transform: translateY(8px) rotate(45deg);
+}
+
+.hamburger.active .bar:nth-child(3) {
+  transform: translateY(-8px) rotate(-45deg);
 }
 
 header {
@@ -1054,6 +1067,106 @@ header {
   .menu-item {
     font-size: 1rem;
   }
+}
+
+.side-nav {
+  background-color: #323544;
+  color: #fff;
+  overflow: auto;
+  height: 100vh;
+  position: fixed;
+  width: 280px;
+  top: 0;
+  right: 0;
+  z-index: 1;
+  text-transform: uppercase;
+}
+
+.side-nav-ul {
+  padding: 10px 20px;
+}
+
+.contact-li {
+  padding: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  outline: 1px solid rgba(0, 0, 0, 0.25);
+  border-radius: 3px;
+  margin-bottom: 20px;
+  font-size: 1.1rem;
+}
+
+.contact-li:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.li-heading {
+  padding: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  outline: 1px solid rgba(0, 0, 0, 0.25);
+  border-radius: 3px;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  font-size: 1.1rem;
+}
+
+.li-heading:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.small-text {
+  margin-top: 10px;
+  font-size: .7rem;
+}
+
+.side-nav-item {
+  border-top: 1px solid rgba(0, 0, 0, 0.75);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  border-radius: 3px;
+  background-color: #212330;
+  padding: 15px;
+}
+
+.small-ul {
+  padding: 0;
+}
+
+.li-item {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.li-item:hover .li-heading {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.side-nav-ul-2 {
+  padding: 0;
+}
+
+.li-heading-2 {
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 3px;
+  padding: 15px 20px;
+  font-size: 1rem;
+}
+
+.li-heading-2:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.sml-arrow {
+  font-size: 0.5rem;
+  padding-right: 15px;
+}
+
+.sml-li-text {
+  font-size: 0.8rem;
+}
+
+.li-item-2:hover .li-heading-2 {
+  background-color: rgba(255, 255, 255, 0.1);
 }
 
 .banner {
