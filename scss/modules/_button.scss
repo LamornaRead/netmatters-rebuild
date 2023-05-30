@@ -126,11 +126,68 @@
 
 //banners 
 
-.comp-btn {
+.banner-btn-1 {
     background-color: $web;
     font-size: 1.3rem;
     font-weight: $font-weight--light;
     padding: 10px 30px;
+    &:hover {
+        background-color: darken($web, 10%);
+    }
+}
+.banner-btn-2 {
+    background-color: $software;
+    font-size: 1.3rem;
+    font-weight: $font-weight--light;
+    padding: 10px 30px;
+    &:hover {
+        background-color: darken($software, 10%);
+    }
+}
+.banner-btn-3 {
+    background-color: $it;
+    font-size: 1.3rem;
+    font-weight: $font-weight--light;
+    padding: 10px 30px;
+    &:hover {
+        background-color: darken($it, 10%);
+    }
+}
+.banner-btn-4 {
+    background-color: $digital;
+    font-size: 1.3rem;
+    font-weight: $font-weight--light;
+    padding: 10px 30px;
+    &:hover {
+        background-color: darken($digital, 10%);
+    }
+}
+.banner-btn-5 {
+    background-color: $telecom;
+    font-size: 1.3rem;
+    font-weight: $font-weight--light;
+    padding: 10px 30px;
+    &:hover {
+        background-color: darken($telecom, 10%);
+    }
+}
+.banner-btn-6 {
+    background-color: $web;
+    font-size: 1.3rem;
+    font-weight: $font-weight--light;
+    padding: 10px 30px;
+    &:hover {
+        background-color: darken($web, 10%);
+    }
+}
+.banner-btn-7 {
+    background-color: $cyber;
+    font-size: 1.3rem;
+    font-weight: $font-weight--light;
+    padding: 10px 30px;
+    &:hover {
+        background-color: darken($cyber, 10%);
+    }
 }
 
 // nav buttons

@@ -592,11 +592,81 @@ a {
   background-color: #CE4125;
 }
 
-.comp-btn {
+.banner-btn-1 {
   background-color: #926FB1;
   font-size: 1.3rem;
   font-weight: 400;
   padding: 10px 30px;
+}
+
+.banner-btn-1:hover {
+  background-color: #79539a;
+}
+
+.banner-btn-2 {
+  background-color: #67809F;
+  font-size: 1.3rem;
+  font-weight: 400;
+  padding: 10px 30px;
+}
+
+.banner-btn-2:hover {
+  background-color: #526781;
+}
+
+.banner-btn-3 {
+  background-color: #4183D7;
+  font-size: 1.3rem;
+  font-weight: 400;
+  padding: 10px 30px;
+}
+
+.banner-btn-3:hover {
+  background-color: #286abd;
+}
+
+.banner-btn-4 {
+  background-color: #2ECC71;
+  font-size: 1.3rem;
+  font-weight: 400;
+  padding: 10px 30px;
+}
+
+.banner-btn-4:hover {
+  background-color: #25a25a;
+}
+
+.banner-btn-5 {
+  background-color: #D64541;
+  font-size: 1.3rem;
+  font-weight: 400;
+  padding: 10px 30px;
+}
+
+.banner-btn-5:hover {
+  background-color: #bc2c28;
+}
+
+.banner-btn-6 {
+  background-color: #926FB1;
+  font-size: 1.3rem;
+  font-weight: 400;
+  padding: 10px 30px;
+}
+
+.banner-btn-6:hover {
+  background-color: #79539a;
+}
+
+.banner-btn-7 {
+  background-color: #F62459;
+  font-size: 1.3rem;
+  font-weight: 400;
+  padding: 10px 30px;
+}
+
+.banner-btn-7:hover {
+  background-color: #de093f;
 }
 
 .support-btn {
@@ -997,6 +1067,10 @@ header {
   background-size: cover;
 }
 
+.text-bk {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
 .banner-content {
   color: #fff;
   font-weight: 600;
@@ -1038,8 +1112,46 @@ header {
   }
 }
 
-.banner-text {
-  margin: auto;
+.banner-text-one {
+  padding: 40px 0;
+}
+
+@media (min-width: 993px) {
+  .banner-text-one {
+    padding: 20px 0;
+  }
+}
+
+@media (min-width: 1244px) {
+  .banner-text-one {
+    padding: 50px 0;
+  }
+}
+
+.banner-text-two {
+  padding: 100px 0;
+}
+
+@media (min-width: 993px) {
+  .banner-text-two {
+    padding: 80px 0;
+  }
+}
+
+.slick-dots::before {
+  z-index: 2;
+  top: -510px;
+}
+
+.slick-dots li button:before {
+  top: -60px;
+  font-size: 14px;
+  color: white;
+}
+
+.slick-dots li.slick-active button:before {
+  opacity: 1;
+  color: white;
 }
 
 .service-heading h2 {
