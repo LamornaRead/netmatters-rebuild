@@ -21,26 +21,21 @@
          @content;
       }
    }
-
    @else if $break == "medium" {
       @media (min-width: $break--med + 1) {
          @content;
       }
    }
-
    @else if $break == "large" {
       @media (min-width: $break--lrg + 1) {
          @content;
       }
    }
-
    @else if $break == "x-large" {
       @media (min-width: $break--x-lrg + 1) {
          @content;
       }
    }
-
-
    @else {
       @error "#{$break} isnt a valid media query size!!";
    }

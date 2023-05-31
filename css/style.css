@@ -459,7 +459,7 @@ a {
   content: "";
   width: 0;
   height: 0;
-  top: 52px;
+  top: 44px;
   border-left: 65px solid transparent;
   border-right: 65px solid transparent;
   z-index: 2;
@@ -742,14 +742,26 @@ a {
   transform: translateY(-8px) rotate(-45deg);
 }
 
-header {
-  padding: 20px 0;
+.header {
+  z-index: 3;
+  background-color: #fff;
+  width: 100%;
+  transition: top 0.6s ease-in-out;
 }
 
-@media (min-width: 993px) {
-  header {
-    height: 100px;
+.sticky {
+  position: fixed;
+  top: 0;
+}
+
+@media (max-width: 768px) {
+  .sticky {
+    max-height: 200px;
   }
+}
+
+.nav-up {
+  top: -200%;
 }
 
 .net-logo {
@@ -805,11 +817,14 @@ header {
   border: 1px solid #51cbee;
 }
 
-.header {
+.header-top {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
+  max-height: 300px;
+  min-height: 100px;
+  padding: 20px 0;
   width: 100%;
 }
 
@@ -850,7 +865,6 @@ header {
 .main-nav {
   background-color: #323544;
   width: 100%;
-  height: auto;
   color: #fff;
   margin-bottom: -15px;
   margin-top: -15px;
@@ -1187,6 +1201,28 @@ header {
 .banner {
   width: 100%;
   margin-bottom: 30px;
+}
+
+.stuck {
+  margin-top: 180px;
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+  .stuck {
+    margin-top: 100px;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1243px) {
+  .stuck {
+    margin-top: 205px;
+  }
+}
+
+@media (min-width: 1244px) {
+  .stuck {
+    margin-top: 200px;
+  }
 }
 
 .banner-bk {

@@ -3,6 +3,20 @@
     width: 100%;
     margin-bottom: 30px;
 }
+
+.stuck {
+    margin-top: 180px;
+    @media (min-width: $break--med) and (max-width: $break--lrg){
+        margin-top: 100px;
+    }
+    @media (min-width: $break--lrg) and (max-width: $break--x-lrg) {
+        margin-top: 205px;
+    }
+    @include mq(x-large) {
+        margin-top: 200px;
+    }
+}
+
 .banner-bk {
     height: 550px;
     background-position: center;
