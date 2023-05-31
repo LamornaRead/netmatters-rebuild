@@ -1,0 +1,13 @@
+.cookie-btn {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    z-index: 99;
+    background-color: #75788a;
+    color: $white;
+    font-size: 0.8rem;
+    font-weight: $font-weight--bold;
+    padding: 2px 10px;
+    border: solid #75788a;
+    border-top-right-radius: 10px;
+}
