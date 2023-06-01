@@ -6,15 +6,18 @@
     width: 100%;
     transition: top 0.6s ease-in-out;
 }
-.sticky {
+.sticky-head {
+    top: -250px;
     position: fixed;
+}
+.sticky {
     top: 0;
     @media (max-width: $break--med) {
         max-height: 200px;
     }
 }
 .nav-up {
-    top: -200%;
+    top: -250%;
 }
 
 .net-logo {
