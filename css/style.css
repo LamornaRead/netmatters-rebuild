@@ -743,6 +743,32 @@ a {
   transform: translateY(-8px) rotate(-45deg);
 }
 
+.hamburger-two {
+  height: 45px;
+  padding-top: 7px;
+}
+
+.bar-two {
+  content: "";
+  width: 25px;
+  height: 2px;
+  background-color: #fff;
+  margin: 6px auto;
+  transition: all 0.3s ease-in-out;
+}
+
+.hamburger-two.active .bar-two:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger-two.active .bar-two:nth-child(1) {
+  transform: translateY(8px) rotate(45deg);
+}
+
+.hamburger-two.active .bar-two:nth-child(3) {
+  transform: translateY(-8px) rotate(-45deg);
+}
+
 .cookie-btn {
   position: fixed;
   left: 0;
@@ -772,20 +798,18 @@ a {
 .sticky-head {
   top: -250px;
   position: fixed;
+  visibility: hidden;
 }
 
 .sticky {
   top: 0;
+  visibility: visible;
 }
 
 @media (max-width: 768px) {
   .sticky {
     max-height: 200px;
   }
-}
-
-.nav-up {
-  top: -250%;
 }
 
 .net-logo {
