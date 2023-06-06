@@ -1,4 +1,4 @@
-.cookie-btn {
+.manage-btn {
     position: fixed;
     left: 0;
     bottom: 0;
@@ -13,5 +13,80 @@
     &:hover {
         background-color: lighten($color: #75788a, $amount: 10%);
         border: solid lighten($color: #75788a, $amount: 10%);
+    }
+}
+
+.consent {
+    display: flex;
+    justify-content: center;
+    position: fixed; 
+
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 30px;
+    background-color: rgba(0,0,0,0.7);
+    z-index: 100; 
+}
+
+.cookie-con {
+    background-color: $white;
+    z-index: 101;
+    margin: auto;
+    border-radius: 5px;
+    max-width: 600px;
+}
+
+.cookie-head {
+    font-size: 1.7rem;
+    line-height: 2rem;
+    font-weight: $font-weight--light;
+    margin: 0;
+    padding: 20px;
+    border-bottom: 1px solid $light-grey;
+}
+
+.cookie.text{
+    font-size: 1rem;
+    font-weight: $font-weight--light;
+    line-height: 1.8rem;
+    color: $grey;
+    margin: 0;
+    padding: 20px 20px 50px 20px;
+    border-bottom: 1px solid $light-grey;
+}
+
+.privacy-link {
+    color: #666;
+}
+
+// buttons
+
+.cookie-btns-wrapper {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    @include mq(large) {
+        flex-direction: row;
+    }
+}
+
+.settings-btn {
+    background-color: $grey;
+    width: 100%;
+    font-size: 1.1rem;
+    &:hover {
+        background-color: darken($color: $grey, $amount: 10%);
+    }
+}
+
+.accept-btn {
+    background-color: $web;
+    width: 100%;
+    font-size: 1.1rem;
+    &:hover {
+        background-color: darken($color: $web, $amount: 10%);
     }
 }
