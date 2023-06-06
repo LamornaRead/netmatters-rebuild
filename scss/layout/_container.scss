@@ -17,12 +17,7 @@
 }
 
 .container-main {
-    position: relative;
-    left: 0;
     overflow: hidden;
 }
 
-.container-main.active {
-    left: -280px; 
-    overflow: hidden;
-}
+

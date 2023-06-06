@@ -1,5 +1,4 @@
 //sticky header vars
-let bodyMain = $('.body');
 const head = $('.sticky-head');
 
 
