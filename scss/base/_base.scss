@@ -12,13 +12,22 @@
     line-height: 1.4rem;
     color: $dark-grey;
  }
-.body.covered {
-   overflow: hidden;
-}
 .body {
    position: relative;
    left: 0;
 }
+
+.body.active {
+   left: -280px; 
+   overflow: hidden;
+   @include mq(large) {
+      left: -333px;
+   }
+ }
+ .body.covered {
+   overflow: hidden;
+}
+
 
 .overlay {
    position: fixed; 
@@ -37,12 +46,11 @@
 .overlay.active {
    visibility: visible;
    left: -280px;
+   @include mq(large) {
+      left: -333px;
+   }
 }
 
- .body.active {
-   left: -280px; 
-   overflow: hidden;
- }
 
  ul { 
    list-style: none;

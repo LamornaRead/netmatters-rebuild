@@ -9,6 +9,10 @@
     right: -280px;
     z-index: 1;
     text-transform: uppercase;
+    @include mq(large) {
+        width: 333px;
+        right: -333px;
+    }
 }
 
 .side-nav.active {
@@ -45,6 +49,7 @@
     border-radius: 3px;
     background-color: $black-grey; 
     padding: 15px;
+    width: 100%;
 }
 
 .small-ul {
@@ -61,10 +66,14 @@
     }
 }
 
+.nav-li {
+    font-size: 1rem;
+}
 // second nav section
 
 .side-nav-ul-2 {
     padding: 0;
+    margin: 0;
 }
  
 .li-heading-2 {
@@ -79,11 +88,11 @@
 
 .sml-arrow {
     font-size: 0.5rem;
-    padding-right: 15px;
+    padding-right: 10px;
 }
 
 .sml-li-text {
-    font-size: 0.8rem;
+    font-size: 0.85rem;
 }
 
 .li-item-2:hover {
@@ -91,15 +100,3 @@
         background-color: rgba($color: $white, $alpha: .1);
     }
 }
-
-// .side-nav-outer {
-//         position: fixed; /* Sit on top of the page content */
-//         width: 100%; /* Full width (cover the whole page) */
-//         height: 100%; /* Full height (cover the whole page) */
-//         top: 0;
-//         left: 0;
-//         right: 0;
-//         bottom: 0;
-//         background-color: rgba(0,0,0,0.5); /* Black background with opacity */
-//         cursor: pointer; /* Add a pointer on hover */
-// }

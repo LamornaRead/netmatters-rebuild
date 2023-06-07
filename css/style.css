@@ -394,13 +394,24 @@ body {
   color: #323544;
 }
 
-.body.covered {
-  overflow: hidden;
-}
-
 .body {
   position: relative;
   left: 0;
+}
+
+.body.active {
+  left: -280px;
+  overflow: hidden;
+}
+
+@media (min-width: 993px) {
+  .body.active {
+    left: -333px;
+  }
+}
+
+.body.covered {
+  overflow: hidden;
 }
 
 .overlay {
@@ -422,9 +433,10 @@ body {
   left: -280px;
 }
 
-.body.active {
-  left: -280px;
-  overflow: hidden;
+@media (min-width: 993px) {
+  .overlay.active {
+    left: -333px;
+  }
 }
 
 ul {
@@ -1263,6 +1275,13 @@ a {
   text-transform: uppercase;
 }
 
+@media (min-width: 993px) {
+  .side-nav {
+    width: 333px;
+    right: -333px;
+  }
+}
+
 .side-nav.active {
   right: 0;
 }
@@ -1312,6 +1331,7 @@ a {
   border-radius: 3px;
   background-color: #212330;
   padding: 15px;
+  width: 100%;
 }
 
 .small-ul {
@@ -1327,8 +1347,13 @@ a {
   background-color: rgba(255, 255, 255, 0.1);
 }
 
+.nav-li {
+  font-size: 1rem;
+}
+
 .side-nav-ul-2 {
   padding: 0;
+  margin: 0;
 }
 
 .li-heading-2 {
@@ -1344,11 +1369,11 @@ a {
 
 .sml-arrow {
   font-size: 0.5rem;
-  padding-right: 15px;
+  padding-right: 10px;
 }
 
 .sml-li-text {
-  font-size: 0.8rem;
+  font-size: 0.85rem;
 }
 
 .li-item-2:hover .li-heading-2 {
