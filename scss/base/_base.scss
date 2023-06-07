@@ -12,6 +12,9 @@
     line-height: 1.4rem;
     color: $dark-grey;
  }
+.body.covered {
+   overflow: hidden;
+}
 .body {
    position: relative;
    left: 0;

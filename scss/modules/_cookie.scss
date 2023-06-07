@@ -17,10 +17,10 @@
 }
 
 .consent {
+    visibility: hidden;
     display: flex;
     justify-content: center;
     position: fixed; 
-
     top: 0;
     left: 0;
     right: 0;
@@ -50,15 +50,18 @@
 .cookie.text{
     font-size: 1rem;
     font-weight: $font-weight--light;
-    line-height: 1.8rem;
-    color: $grey;
+    line-height: 1.9rem;
+    color: #666;
     margin: 0;
     padding: 20px 20px 50px 20px;
     border-bottom: 1px solid $light-grey;
 }
 
 .privacy-link {
-    color: #666;
+    color: $dark-grey;
+    &:hover {
+        text-decoration: underline;
+    }
 }
 
 // buttons

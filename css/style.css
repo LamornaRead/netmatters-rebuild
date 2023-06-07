@@ -394,6 +394,10 @@ body {
   color: #323544;
 }
 
+.body.covered {
+  overflow: hidden;
+}
+
 .body {
   position: relative;
   left: 0;
@@ -812,6 +816,7 @@ a {
 }
 
 .consent {
+  visibility: hidden;
   display: flex;
   justify-content: center;
   position: fixed;
@@ -844,15 +849,19 @@ a {
 .cookie.text {
   font-size: 1rem;
   font-weight: 400;
-  line-height: 1.8rem;
-  color: #848484;
+  line-height: 1.9rem;
+  color: #666;
   margin: 0;
   padding: 20px 20px 50px 20px;
   border-bottom: 1px solid #DDDDDD;
 }
 
 .privacy-link {
-  color: #666;
+  color: #323544;
+}
+
+.privacy-link:hover {
+  text-decoration: underline;
 }
 
 .cookie-btns-wrapper {
