@@ -12,6 +12,7 @@
     border-radius: 3px;
     cursor: pointer;
     border: none;
+    outline: none;
 }
 .btn-primary {
     background-color: $dark-grey;
@@ -126,11 +127,68 @@
 
 //banners 
 
-.comp-btn {
+.banner-btn-1 {
     background-color: $web;
     font-size: 1.3rem;
     font-weight: $font-weight--light;
     padding: 10px 30px;
+    &:hover {
+        background-color: darken($web, 10%);
+    }
+}
+.banner-btn-2 {
+    background-color: $software;
+    font-size: 1.3rem;
+    font-weight: $font-weight--light;
+    padding: 10px 30px;
+    &:hover {
+        background-color: darken($software, 10%);
+    }
+}
+.banner-btn-3 {
+    background-color: $it;
+    font-size: 1.3rem;
+    font-weight: $font-weight--light;
+    padding: 10px 30px;
+    &:hover {
+        background-color: darken($it, 10%);
+    }
+}
+.banner-btn-4 {
+    background-color: $digital;
+    font-size: 1.3rem;
+    font-weight: $font-weight--light;
+    padding: 10px 30px;
+    &:hover {
+        background-color: darken($digital, 10%);
+    }
+}
+.banner-btn-5 {
+    background-color: $telecom;
+    font-size: 1.3rem;
+    font-weight: $font-weight--light;
+    padding: 10px 30px;
+    &:hover {
+        background-color: darken($telecom, 10%);
+    }
+}
+.banner-btn-6 {
+    background-color: $web;
+    font-size: 1.3rem;
+    font-weight: $font-weight--light;
+    padding: 10px 30px;
+    &:hover {
+        background-color: darken($web, 10%);
+    }
+}
+.banner-btn-7 {
+    background-color: $cyber;
+    font-size: 1.3rem;
+    font-weight: $font-weight--light;
+    padding: 10px 30px;
+    &:hover {
+        background-color: darken($cyber, 10%);
+    }
 }
 
 // nav buttons
@@ -172,14 +230,58 @@
     overflow: hidden;
 }
 
-.hamburger-btn {
+// main hamburger 
+
+.hamburger {
     height: 45px;
     padding-top: 7px;
 }
-.hamburger {
+
+.bar {
     content: "";
-    width: 30px;
-    height: 3px;
+    width: 25px;
+    height: 2px;
     background-color: $white;
-    margin: 5px 0;
+    margin: 6px auto;
+    transition: all 0.3s ease-in-out;
+}
+
+.hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+}
+.hamburger.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+}
+.hamburger.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+}
+
+
+
+//sticky header hamburger
+
+.hamburger-two {
+    height: 45px;
+    padding-top: 7px;
+}
+
+
+.bar-two {
+    content: "";
+    width: 25px;
+    height: 2px;
+    background-color: $white;
+    margin: 6px auto;
+    transition: all 0.3s ease-in-out;
+}
+
+
+.hamburger-two.active .bar-two:nth-child(2) {
+    opacity: 0;
+}
+.hamburger-two.active .bar-two:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+}
+.hamburger-two.active .bar-two:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
 }

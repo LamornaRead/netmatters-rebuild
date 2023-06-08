@@ -1,48 +1,41 @@
 //main
 .banner {
-    float: left;
-    position: relative;
     width: 100%;
     margin-bottom: 30px;
 }
-.banner-item {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+
+.stuck {
+    margin-top: 180px;
+    @media (min-width: $break--med) and (max-width: $break--lrg){
+        margin-top: 100px;
+    }
+    @media (min-width: $break--lrg) and (max-width: $break--x-lrg) {
+        margin-top: 205px;
+    }
+    @include mq(x-large) {
+        margin-top: 200px;
+    }
 }
 
-//image
-.img-container {
-    position: absolute;
-    right: 0;
-    left: 0;
+.banner-bk {
     height: 550px;
-}
-.banner-img {
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
+    background-position: center;
+    background-size: cover;
 }
 
-
+.text-bk {
+    background-color: rgba(0, 0, 0, .5);
+}
 //content 
 
 .banner-content {
-    @extend %center;
     color: $white;
     font-weight: $font-weight--bold;
-    position: relative;
     text-align: center;
     width: 100%;
     height: 550px;
-    padding-top: 80px;
-    padding-bottom: 80px;
-    justify-content: center;
-    background-color: rgba(0, 0, 0, .3);
     @include mq(large) {
         text-align: start;
-        padding-top: 50px;
     }
 }
 .banner-content h2 {
@@ -50,8 +43,8 @@
     line-height: 3rem;
     margin-top: 0;
     @include mq(large) {
-        font-size: 3rem;
-        line-height: 4rem;
+        font-size: 3.5rem;
+        line-height: 5rem;
     }
 }
 
@@ -66,25 +59,63 @@
     }
 }
 
+.banner-text-one {
+    padding: 40px 0;
+    @include mq(large){
+        padding: 20px 0;
+    }
+    @include mq(x-large) {
+        padding: 50px 0;
+    }
+}
+
+.banner-text-two {
+    padding: 100px 0;
+    @include mq(large){
+        padding: 80px 0;
+    }
+}
+
 
 // nav dots
-.dots{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    height: 30px;
-    position: absolute;
-    left: 0;
-    right: 0;
-    bottom: 25px;
-    padding: 10px;
+
+.slick-dots::before {
+    z-index: 2;
+    top: -510px;
 }
-.dot {
-    content: "";
-    width: 10px;
-    height: 10px;
-    background-color: white;
-    border-radius: 50%;
-    margin-left: 10px;
-    margin-right: 10px;
+
+.slick-dots li button:before{ 
+    top: -60px;
+    font-size: 14px;
+    color: white;
 }
+.slick-dots li.slick-active button:before {
+    opacity: 1;
+    color: white;
+}
+
+// .dots {
+//     display: flex;
+//     flex-direction: row;
+//     justify-content: center;
+//     height: 30px;
+//     position: relative;
+//     left: 0;
+//     right: 0;
+//     top: -100px;
+//     padding: 10px;
+//   }
+  
+//   .dot {
+//     content: "";
+//     width: 10px;
+//     height: 10px;
+//     opacity: .65;
+//     background-color: white;
+//     border-radius: 50%;
+//     margin-left: 10px;
+//     margin-right: 10px;
+//   }
+//   .dot:hover, .dot:focus {
+//     opacity: 1;
+//   }
